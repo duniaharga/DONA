@@ -1,0 +1,322 @@
+{
+    "type": "layout",
+    "version": "4.5.28",
+    "name": "DONA Shop",
+    "children": [
+        {
+            "type": "section",
+            "props": {
+                "class": "dona-shop-intro",
+                "image_position": "center-center",
+                "name": "Shop collections",
+                "padding": "small",
+                "style": "default",
+                "title_breakpoint": "xl",
+                "title_position": "top-left",
+                "title_rotation": "left",
+                "vertical_align": "middle",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky_breakpoint": "m"
+                            },
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Bags",
+                                        "margin": "remove-vertical",
+                                        "title_element": "h1",
+                                        "title_style": "h1"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "column_breakpoint": "m",
+                                        "content": "Discover DONA collections: thoughtful shapes, everyday function, and understated elegance.",
+                                        "margin": "medium",
+                                        "maxwidth": "large"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "image_position": "center-center",
+                "padding": "xsmall",
+                "style": "default",
+                "title_breakpoint": "xl",
+                "title_position": "top-left",
+                "title_rotation": "left",
+                "vertical_align": "middle",
+                "width": ""
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky_breakpoint": "m"
+                            },
+                            "children": [
+                                {
+                                    "type": "grid",
+                                    "props": {
+                                        "class": "dona-shop-collections",
+                                        "content_column_breakpoint": "m",
+                                        "filter_align": "left",
+                                        "filter_all": true,
+                                        "filter_grid_breakpoint": "m",
+                                        "filter_grid_width": "auto",
+                                        "filter_position": "top",
+                                        "filter_style": "tab",
+                                        "grid_column_gap": "small",
+                                        "grid_default": "2",
+                                        "grid_large": "3",
+                                        "grid_medium": "3",
+                                        "grid_row_gap": "medium",
+                                        "grid_small": "3",
+                                        "icon_width": 80,
+                                        "id": "collections",
+                                        "image_align": "top",
+                                        "image_grid_breakpoint": "m",
+                                        "image_grid_width": "1-2",
+                                        "image_height": 600,
+                                        "image_svg_color": "emphasis",
+                                        "image_width": 500,
+                                        "item_animation": true,
+                                        "lightbox_bg_close": true,
+                                        "link_style": "default",
+                                        "link_text": "",
+                                        "margin": "large",
+                                        "meta_align": "below-title",
+                                        "meta_element": "div",
+                                        "meta_style": "text-meta",
+                                        "name": "All DONA collections",
+                                        "panel_link": true,
+                                        "panel_link_hover": false,
+                                        "show_content": false,
+                                        "show_hover_image": true,
+                                        "show_hover_video": true,
+                                        "show_image": true,
+                                        "show_link": true,
+                                        "show_meta": false,
+                                        "show_title": true,
+                                        "show_video": true,
+                                        "text_align": "center",
+                                        "title_align": "top",
+                                        "title_element": "h2",
+                                        "title_grid_breakpoint": "m",
+                                        "title_grid_width": "1-2",
+                                        "title_hover_style": "reset",
+                                        "title_margin": "small",
+                                        "title_style": "h5"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "grid_item",
+                                            "source": {
+                                                "query": {
+                                                    "name": "productCats",
+                                                    "field": {
+                                                        "name": "customProductCat",
+                                                        "arguments": {
+                                                            "id": 19
+                                                        }
+                                                    }
+                                                },
+                                                "props": {
+                                                    "title": {
+                                                        "name": "name"
+                                                    },
+                                                    "image": {
+                                                        "name": "thumbnail.url"
+                                                    },
+                                                    "image_alt": {
+                                                        "name": "name"
+                                                    },
+                                                    "link": {
+                                                        "name": "link"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "grid_item",
+                                            "source": {
+                                                "query": {
+                                                    "name": "productCats",
+                                                    "field": {
+                                                        "name": "customProductCat",
+                                                        "arguments": {
+                                                            "id": 20
+                                                        }
+                                                    }
+                                                },
+                                                "props": {
+                                                    "title": {
+                                                        "name": "name"
+                                                    },
+                                                    "image": {
+                                                        "name": "thumbnail.url"
+                                                    },
+                                                    "image_alt": {
+                                                        "name": "name"
+                                                    },
+                                                    "link": {
+                                                        "name": "link"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "grid_item",
+                                            "source": {
+                                                "query": {
+                                                    "name": "productCats",
+                                                    "field": {
+                                                        "name": "customProductCat",
+                                                        "arguments": {
+                                                            "id": 21
+                                                        }
+                                                    }
+                                                },
+                                                "props": {
+                                                    "title": {
+                                                        "name": "name"
+                                                    },
+                                                    "image": {
+                                                        "name": "thumbnail.url"
+                                                    },
+                                                    "image_alt": {
+                                                        "name": "name"
+                                                    },
+                                                    "link": {
+                                                        "name": "link"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "class": "dona-shop-catalog",
+                "image_position": "center-center",
+                "name": "Shop products and filters",
+                "padding": "small",
+                "style": "default",
+                "title_breakpoint": "xl",
+                "title_position": "top-left",
+                "title_rotation": "left",
+                "vertical_align": "middle",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky_breakpoint": "m"
+                            },
+                            "children": [
+                                {
+                                    "type": "woo_filter",
+                                    "props": {
+                                        "active_filters_align": "left",
+                                        "class": "dona-shop-filter",
+                                        "filter": "offcanvas",
+                                        "filter_active_all": "both",
+                                        "filter_active_display": true,
+                                        "filter_dropdown_dropbar_content_width": "container",
+                                        "filter_dropdown_grid": "4",
+                                        "filter_dropdown_grid_breakpoint": "m",
+                                        "filter_dropdown_parent_icon": true,
+                                        "filter_dropnav_breakpoint": "m",
+                                        "filter_dropnav_dropdown_align": "left",
+                                        "filter_dropnav_fallback": "dropdown",
+                                        "filter_offcanvas_flip": false,
+                                        "filter_offcanvas_overlay": true,
+                                        "filter_title_style": "h5",
+                                        "filter_toggle_icon": "settings",
+                                        "filter_toggle_icon_align": "left",
+                                        "filter_toggle_style": "text",
+                                        "filters_align": "left",
+                                        "grid_breakpoint": "s",
+                                        "grid_column_gap": "small",
+                                        "grid_row_gap": "small",
+                                        "margin": "remove-vertical",
+                                        "name": "Left filter drawer",
+                                        "product_ordering_align": "right",
+                                        "product_ordering_icon_align": "left",
+                                        "result_count_align": "right",
+                                        "show_active_filters": true,
+                                        "show_attribute_filters": true,
+                                        "show_price_filter": false,
+                                        "show_product_ordering": true,
+                                        "show_rating_filter": false,
+                                        "show_result_count": true
+                                    }
+                                },
+                                {
+                                    "type": "woo_products",
+                                    "props": {
+                                        "cat_operator": "IN",
+                                        "class": "dona-product-grid dona-shop-grid",
+                                        "columns": 4,
+                                        "limit": 8,
+                                        "margin": "medium",
+                                        "name": "Shop product cards",
+                                        "order": "desc",
+                                        "orderby": "date",
+                                        "paginate": "false",
+                                        "product_visibility": "visible",
+                                        "show_count": false,
+                                        "show_ordering": false,
+                                        "show_rating": false,
+                                        "show_title": true,
+                                        "tag_operator": "IN",
+                                        "terms_operator": "IN",
+                                        "type": "current_query"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+/* WooCommerce and Rank Math columns need room to remain readable together. */
+@media (min-width: 783px) {
+    body.post-type-product.edit-php #posts-filter { clear: both; overflow-x: auto; }
+    body.post-type-product.edit-php .wp-list-table { table-layout: auto; min-width: 1360px; }
+    body.post-type-product.edit-php .wp-list-table .column-name { min-width: 220px; }
+    body.post-type-product.edit-php .wp-list-table .column-rank_math_seo_details {
+        width: 220px;
+        min-width: 220px;
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+    body.post-type-product.edit-php .wp-list-table .column-global_unique_id { min-width: 100px; }
+    body.post-type-product.edit-php .column-rank_math_seo_details .rank-math-column-display {
+        max-width: 100%;
+        word-break: normal;
+    }
+}

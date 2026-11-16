@@ -1,0 +1,390 @@
+{
+    "type": "layout",
+    "version": "4.5.28",
+    "name": "About DONA",
+    "children": [
+        {
+            "type": "section",
+            "props": {
+                "name": "About DONA title",
+                "html_element": "section",
+                "style": "muted",
+                "width": "default",
+                "padding": "small",
+                "class": "dona-about-intro"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1",
+                        "margin": "remove-vertical"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "About DONA",
+                                        "title_element": "h1",
+                                        "title_style": "h3",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-page-title"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "name": "Considered Design",
+                "html_element": "section",
+                "style": "muted",
+                "width": "default",
+                "padding": "none",
+                "class": "dona-about-story"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "name": "Image and story",
+                        "layout": "1-2,1-2",
+                        "column_gap": "collapse",
+                        "row_gap": "collapse",
+                        "margin": "remove-vertical",
+                        "class": "dona-about-row"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "name": "Photograph",
+                                "width_default": "1-1",
+                                "width_medium": "1-2",
+                                "class": "dona-about-photo-column"
+                            },
+                            "children": [
+                                {
+                                    "type": "image",
+                                    "props": {
+                                        "image": "http://localhost:8896/wp-content/uploads/2026/11/dona-about-clasp.jpg",
+                                        "image_alt": "Close-up of a handbag frame and gold-tone clasp held with white gloves.",
+                                        "image_width": 801,
+                                        "image_height": 1274,
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-photo"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "column",
+                            "props": {
+                                "name": "Story",
+                                "width_default": "1-1",
+                                "width_medium": "1-2",
+                                "vertical_align": "middle",
+                                "class": "dona-about-copy"
+                            },
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Considered Design",
+                                        "title_element": "h2",
+                                        "title_style": "h3",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-heading"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "<p>DONA brings sculptural shapes and everyday practicality together. Our collection explores clean lines, distinctive silhouettes, and details that make a bag feel personal. From a favourite shoulder bag to a roomy tote, find a shape that fits the way you move.</p>",
+                                        "margin": "small",
+                                        "class": "dona-about-description"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "name": "Inspired by Everyday Life",
+                "html_element": "section",
+                "style": "muted",
+                "width": "default",
+                "padding": "none",
+                "class": "dona-about-story dona-about-story-reversed"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "name": "Image and story",
+                        "layout": "1-2,1-2",
+                        "column_gap": "collapse",
+                        "row_gap": "collapse",
+                        "margin": "remove-vertical",
+                        "class": "dona-about-row"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "name": "Story",
+                                "width_default": "1-1",
+                                "width_medium": "1-2",
+                                "vertical_align": "middle",
+                                "class": "dona-about-copy"
+                            },
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Inspired by Everyday Life",
+                                        "title_element": "h2",
+                                        "title_style": "h3",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-heading"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "<p>From morning plans to evenings out, the things you carry tell your story. Discover shoulder bags, totes, and top-handle styles that bring a quiet confidence to everyday dressing, with colours and shapes that feel like you.</p>",
+                                        "margin": "small",
+                                        "class": "dona-about-description"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "column",
+                            "props": {
+                                "name": "Photograph",
+                                "width_default": "1-1",
+                                "width_medium": "1-2",
+                                "class": "dona-about-photo-column"
+                            },
+                            "children": [
+                                {
+                                    "type": "image",
+                                    "props": {
+                                        "image": "http://localhost:8896/wp-content/uploads/2026/11/dona-about-everyday.jpg",
+                                        "image_alt": "A woman placing a book into a brown tote beside a cup of coffee.",
+                                        "image_width": 801,
+                                        "image_height": 1365,
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-photo"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "name": "A New Perspective on Everyday Style",
+                "html_element": "section",
+                "style": "muted",
+                "width": "default",
+                "padding": "none",
+                "class": "dona-about-story"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "name": "Image and story",
+                        "layout": "1-2,1-2",
+                        "column_gap": "collapse",
+                        "row_gap": "collapse",
+                        "margin": "remove-vertical",
+                        "class": "dona-about-row"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "name": "Photograph",
+                                "width_default": "1-1",
+                                "width_medium": "1-2",
+                                "class": "dona-about-photo-column"
+                            },
+                            "children": [
+                                {
+                                    "type": "image",
+                                    "props": {
+                                        "image": "http://localhost:8896/wp-content/uploads/2026/11/dona-about-leather.jpg",
+                                        "image_alt": "Close-up of black handbags with curved handles and stitched seams.",
+                                        "image_width": 801,
+                                        "image_height": 1274,
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-photo"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "column",
+                            "props": {
+                                "name": "Story",
+                                "width_default": "1-1",
+                                "width_medium": "1-2",
+                                "vertical_align": "middle",
+                                "class": "dona-about-copy"
+                            },
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "A New Perspective on Everyday Style",
+                                        "title_element": "h2",
+                                        "title_style": "h3",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-heading"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "<p>A beautiful bag can become part of your own signature. DONA pairs expressive silhouettes with a simple approach to styling: choose the shape you love, find your colour, and make it your everyday companion.</p>",
+                                        "margin": "small",
+                                        "class": "dona-about-description"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "name": "Our Vision and Our Design",
+                "html_element": "section",
+                "id": "dona-about-values",
+                "class": "dona-about-values",
+                "style": "secondary",
+                "width": "default",
+                "padding": "small"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "name": "Our Vision",
+                        "layout": "1-3,2-3",
+                        "column_gap": "large",
+                        "row_gap": "small",
+                        "margin": "remove-vertical",
+                        "class": "dona-about-value-row"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "width_default": "1-1",
+                                "width_medium": "1-3"
+                            },
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Our Vision",
+                                        "title_element": "h2",
+                                        "title_style": "h4",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-value-title"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "column",
+                            "props": {
+                                "width_default": "1-1",
+                                "width_medium": "2-3"
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "<p>To make everyday style feel personal. DONA brings together expressive shapes, versatile colours, and room for the things you carry, so you can find a bag that feels like part of your own signature.</p>",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-value-copy"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "row",
+                    "props": {
+                        "name": "Our Design",
+                        "layout": "1-3,2-3",
+                        "column_gap": "large",
+                        "row_gap": "small",
+                        "margin": "large",
+                        "class": "dona-about-value-row dona-about-value-row-divided"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "width_default": "1-1",
+                                "width_medium": "1-3"
+                            },
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Our Design",
+                                        "title_element": "h2",
+                                        "title_style": "h4",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-value-title"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "column",
+                            "props": {
+                                "width_default": "1-1",
+                                "width_medium": "2-3"
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "<p>Clean lines and sculptural silhouettes shape the DONA collection. From roomy totes to compact shoulder bags, each style offers a different way to express yourself. Explore the details, choose your colour, and discover a shape for your everyday.</p>",
+                                        "margin": "remove-vertical",
+                                        "class": "dona-about-value-copy"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

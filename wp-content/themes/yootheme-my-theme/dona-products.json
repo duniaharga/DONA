@@ -1,0 +1,142 @@
+{
+    "type": "layout",
+    "children": [
+        {
+            "type": "section",
+            "props": {
+                "id": "favourites",
+                "class": "dona-products",
+                "name": "DONA \u2014 Find Your Favourite (WooCommerce)",
+                "style": "default",
+                "padding": "none",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": ""
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": [],
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Find Your Favourite",
+                                        "title_element": "h2",
+                                        "text_align": "center",
+                                        "class": "dona-products-title"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "Explore our selection of signature bags.",
+                                        "text_align": "center",
+                                        "class": "dona-products-intro",
+                                        "margin": "remove-vertical"
+                                    }
+                                },
+                                {
+                                    "type": "button",
+                                    "props": {
+                                        "text_align": "center",
+                                        "class": "dona-products-link"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "button_item",
+                                            "props": {
+                                                "content": "View All Bags",
+                                                "link": "/shop/",
+                                                "button_style": "text"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "grid",
+                                    "props": {
+                                        "class": "dona-product-grid",
+                                        "grid_default": "2",
+                                        "grid_medium": "4",
+                                        "grid_column_gap": "small",
+                                        "grid_row_gap": "small",
+                                        "panel_style": "",
+                                        "panel_link": true,
+                                        "panel_link_hover": false,
+                                        "show_title": true,
+                                        "show_image": true,
+                                        "show_meta": true,
+                                        "show_content": true,
+                                        "show_link": true,
+                                        "title_element": "h3",
+                                        "title_margin": "small",
+                                        "content_margin": "remove",
+                                        "meta_align": "below-title",
+                                        "meta_element": "div",
+                                        "image_align": "top",
+                                        "margin": "remove-vertical",
+                                        "link_text": "",
+                                        "image_transition": "scale-up",
+                                        "show_hover_image": true
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "grid_item",
+                                            "props": [],
+                                            "source": {
+                                                "query": {
+                                                    "name": "products",
+                                                    "field": {
+                                                        "name": "customProducts",
+                                                        "arguments": {
+                                                            "terms": [
+                                                                22
+                                                            ],
+                                                            "limit": 8,
+                                                            "order": "menu_order",
+                                                            "order_direction": "ASC"
+                                                        }
+                                                    }
+                                                },
+                                                "props": {
+                                                    "title": {
+                                                        "name": "title"
+                                                    },
+                                                    "image": {
+                                                        "name": "featuredImage.url"
+                                                    },
+                                                    "image_alt": {
+                                                        "name": "featuredImage.alt"
+                                                    },
+                                                    "link": {
+                                                        "name": "link"
+                                                    },
+                                                    "meta": {
+                                                        "name": "donaBadge"
+                                                    },
+                                                    "content": {
+                                                        "name": "donaCardDetails"
+                                                    },
+                                                    "hover_image": {
+                                                        "name": "donaHoverImage.url"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "version": "4.5.28",
+    "name": "DONA Dynamic Products"
+}

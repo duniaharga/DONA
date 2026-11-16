@@ -1,0 +1,130 @@
+{
+  "type": "layout",
+  "children": [
+    {
+      "type": "section",
+      "props": {
+        "style": "default",
+        "width": "expand",
+        "padding": "none",
+        "class": "dona-hero",
+        "name": "DONA \u2014 Elegance in Motion",
+        "header_transparent": true,
+        "header_transparent_noplaceholder": false,
+        "header_transparent_text_color": "dark"
+      },
+      "children": [
+        {
+          "type": "row",
+          "props": {
+            "layout": "1-1"
+          },
+          "children": [
+            {
+              "type": "column",
+              "props": {},
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "Elegance in Motion",
+                    "title_element": "h1",
+                    "text_align": "center",
+                    "class": "dona-hero-title"
+                  }
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "text_align": "center",
+                    "class": "dona-hero-cta"
+                  },
+                  "children": [
+                    {
+                      "type": "button_item",
+                      "props": {
+                        "content": "Show Products",
+                        "link": "index.php?post_type=product",
+                        "button_style": "primary"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "slideshow",
+                  "props": {
+                    "class": "dona-pose-slider",
+                    "slideshow_animation": "fade",
+                    "slideshow_velocity": 0.6,
+                    "slideshow_autoplay": true,
+                    "slideshow_ratio": "1920:760",
+                    "slideshow_min_height": 480,
+                    "slideshow_max_height": 760,
+                    "nav": "thumbnav",
+                    "nav_position": "bottom-center",
+                    "nav_position_margin": "none",
+                    "nav_breakpoint": "",
+                    "nav_align": "center",
+                    "thumbnav_width": "220",
+                    "thumbnav_height": "260",
+                    "slidenav": "",
+                    "slidenav_breakpoint": "",
+                    "slidenav_margin": "small",
+                    "show_title": false,
+                    "show_meta": false,
+                    "show_content": false,
+                    "show_link": false,
+                    "image_loading": true,
+                    "margin": "remove",
+                    "slideshow_autoplay_interval": 5,
+                    "slideshow_autoplay_pause": false
+                  },
+                  "children": [
+                    {
+                      "type": "slideshow_item",
+                      "props": {
+                        "title": "Facing forward, holding the DONA bag",
+                        "image": "wp-content/themes/yootheme-my-theme/assets/hero/pose-1.png",
+                        "image_alt": "Facing forward, holding the DONA bag",
+                        "thumbnail": "wp-content/themes/yootheme-my-theme/assets/hero/reference.png"
+                      }
+                    },
+                    {
+                      "type": "slideshow_item",
+                      "props": {
+                        "title": "Sliding a laptop into the DONA bag",
+                        "image": "wp-content/themes/yootheme-my-theme/assets/hero/pose-2-laptop.png",
+                        "image_alt": "Woman opening the front zipper and sliding a silver laptop into her DONA bag",
+                        "thumbnail": "wp-content/themes/yootheme-my-theme/assets/hero/reference.png"
+                      }
+                    },
+                    {
+                      "type": "slideshow_item",
+                      "props": {
+                        "title": "Taking a notebook out of the DONA bag",
+                        "image": "wp-content/themes/yootheme-my-theme/assets/hero/pose-3.png",
+                        "image_alt": "Taking a notebook out of the DONA bag",
+                        "thumbnail": "wp-content/themes/yootheme-my-theme/assets/hero/reference.png"
+                      }
+                    },
+                    {
+                      "type": "slideshow_item",
+                      "props": {
+                        "title": "Wearing the DONA bag on her shoulder",
+                        "image": "wp-content/themes/yootheme-my-theme/assets/hero/pose-4.png",
+                        "image_alt": "Wearing the DONA bag on her shoulder",
+                        "thumbnail": "wp-content/themes/yootheme-my-theme/assets/hero/reference.png"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "5.0.46",
+  "name": "DONA Hero Pose Slider"
+}

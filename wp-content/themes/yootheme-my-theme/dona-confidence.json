@@ -1,0 +1,64 @@
+{
+    "type": "layout",
+    "children": [
+        {
+            "type": "section",
+            "props": {
+                "class": "dona-confidence",
+                "name": "DONA \u2014 Quiet Confidence",
+                "image": "wp-content/themes/yootheme-my-theme/assets/editorial/quiet-confidence.png",
+                "style": "default",
+                "padding": "none",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": [],
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Quiet Confidence",
+                                        "title_element": "h2",
+                                        "class": "dona-confidence-title"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "A signature silhouette \u2014<br>made to stay with you.",
+                                        "class": "dona-confidence-copy"
+                                    }
+                                },
+                                {
+                                    "type": "button",
+                                    "props": {
+                                        "class": "dona-confidence-cta"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "button_item",
+                                            "props": {
+                                                "content": "Shop Now",
+                                                "link": "http://localhost:8895/shop/",
+                                                "button_style": "primary"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "version": "5.0.46"
+}

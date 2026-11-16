@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub & cPanel Deploy"
+  short_description: "Push WordPress changes and deploy safely over SSH"
+  default_prompt: "Use $cpanel-github-deployer to check GitHub and cPanel SSH access, ask for missing details, and deploy my requested DONA changes with backups and live verification."

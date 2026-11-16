@@ -1,0 +1,454 @@
+/* Figma 26:43. Native Grid; product data remains editable in WooCommerce. */
+.dona-products.uk-section {background:#f5f3f1;padding:180px 0 150px!important;color:#020202;}
+.dona-products > .uk-container {padding-inline:32px;max-width:1920px;box-sizing:border-box;margin-inline:auto;}
+.dona-products-title {font-family:'EB Garamond',serif;font-size:31.5px;font-weight:400;line-height:1.3;letter-spacing:-.945px;margin:0;}
+.dona-products-intro {font-family:'EB Garamond',serif;font-size:12px;line-height:1.3;margin:0;}
+.dona-products-link {margin:8px 0 58px;}
+.dona-products-link .el-content {font-family:'Work Sans',sans-serif;font-size:12.6px;font-weight:300;line-height:1.3;letter-spacing:.378px;text-transform:none;border:0;padding:0 0 5px;min-height:0;text-decoration:underline;text-underline-offset:6px;}
+.dona-product-grid {margin:0;}
+.dona-product-grid > .uk-grid {margin-left:-10px;}
+.dona-product-grid > .uk-grid > * {padding-left:10px;}
+.dona-product-grid .uk-grid-margin {margin-top:22px;}
+.dona-product-grid .el-item {position:relative;}
+.dona-product-grid .el-item:has(.el-hover-image):hover .el-image,
+.dona-product-grid .el-item:has(.el-hover-image):focus-within .el-image {opacity:0;}
+.dona-product-grid .el-item:hover .el-hover-image,
+.dona-product-grid .el-item:focus-within .el-hover-image {opacity:1;}
+.dona-product-grid .el-hover-image {background:#efedeb;}
+.dona-home-cart {position:absolute;right:12px;z-index:4;border:0;border-radius:0;background:#000;color:#fff;padding:7px 14px;font-family:'EB Garamond',serif;font-size:14px;font-style:italic;line-height:1.3;min-height:34px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s ease;}
+.dona-product-grid .el-item:hover .dona-home-cart,.dona-product-grid .el-item:focus-within .dona-home-cart {opacity:1;pointer-events:auto;}
+.dona-home-cart:focus-visible {outline:2px solid #000;outline-offset:3px;}
+.dona-home-cart:disabled {cursor:wait;}
+#dona-cart-confirmation .uk-modal-dialog {width:400px;max-width:calc(100vw - 32px);padding:38px 28px;background:#f5f3f1;color:#161412;}
+#dona-cart-confirmation h2 {font-size:28px;line-height:1.2;font-weight:400;margin:18px 0 12px;}
+#dona-cart-confirmation p {font-size:16px;line-height:1.5;margin:0 0 24px;}
+#dona-cart-confirmation .uk-button-primary {display:block;background:#000;color:#fff;font-size:15px;line-height:40px;padding:0 20px;}
+#dona-cart-confirmation .uk-button-text {margin-top:16px;font-size:14px;text-transform:none;}
+.dona-product-grid .el-item > a.added_to_cart {display:none;}
+@media(hover:none){.dona-home-cart{opacity:1;pointer-events:auto;}}
+.dona-product-grid .el-item > a {color:#020202;text-decoration:none;}
+.dona-product-grid .el-image {display:block;width:100%;height:auto;aspect-ratio:448/537;object-fit:contain;box-sizing:border-box;background:#efedeb;padding:16% 15%;}
+.dona-product-grid .el-image[src*='dona-alma'] {padding:30.5% 6%;}
+.dona-product-grid .el-image[src*='dona-clara'] {padding:35.5% 10.5%;}
+.dona-product-grid .el-image[src*='dona-vera'] {padding:14.2% 4.3%;}
+.dona-product-grid .el-image[src*='dona-nora'] {padding:26.7% 23.6%;}
+.dona-product-grid .el-image[src*='dona-siena'] {padding:16.3% 2.3%;}
+.dona-product-grid .el-title {font-family:'EB Garamond',serif;font-size:13.1px;line-height:18.38px;font-weight:400;letter-spacing:0;text-transform:none;margin:16px 4px 0;}
+.dona-product-grid .el-meta {position:absolute;inset-block-start:12px;inset-inline-start:20px;margin:0;font-family:'EB Garamond',serif;font-style:italic;font-size:15px;line-height:1.3;color:#020202;}
+.dona-product-grid .el-content {margin:0 4px;font-family:'EB Garamond',serif;font-size:13.1px;line-height:18.38px;color:#4a4948;}
+.dona-product-grid .dona-delivery-note {color:#625b55;margin-bottom:8px;}
+.dona-product-grid a:focus-visible {outline:2px solid #4a4948;outline-offset:4px;}
+.dona-product-grid .el-item > a:hover .el-title {text-decoration:underline;text-underline-offset:3px;}
+.dona-demo-notice {color:#737373;}
+.single-product .dona-color-select {position:absolute!important;width:1px!important;height:1px!important;opacity:0;overflow:hidden;clip-path:inset(50%);}
+.dona-color-swatches {display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px;}
+.dona-color-swatch {position:relative;display:flex;align-items:center;justify-content:center;width:52px;height:58px;padding:4px 4px 9px;border:1px solid transparent;background:#efedeb;cursor:pointer;}
+.dona-color-swatch img {width:100%;height:100%;object-fit:contain;}
+.dona-color-swatch::after {content:'';position:absolute;bottom:3px;left:8px;right:8px;height:4px;background:var(--dona-swatch-color);}
+.dona-color-swatch[aria-pressed=true] {border-color:#161412;}
+.dona-color-swatch:focus-visible {outline:2px solid #161412;outline-offset:3px;}
+.dona-color-swatch:disabled {opacity:.35;cursor:not-allowed;}
+.dona-swatch-label {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+.dona-selected-color {display:block;font-size:13px;}
+.dona-shop-product-media {position:relative;display:block;overflow:hidden;}
+.dona-shop-product-media .dona-shop-hover-image {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease;}
+.dona-shop-product-media .dona-shop-hover-video {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;transition:opacity .35s ease;}
+.dona-shop-product-media.is-playing .dona-shop-hover-video {opacity:1;}
+.dona-collection-intro > .uk-container,.dona-collection-catalog > .uk-container {padding-inline:16px;max-width:none;}
+.dona-collection-intro h1 {font-size:32px;font-weight:400;line-height:1.2;}
+.dona-collection-description {font-family:'Work Sans',sans-serif;font-size:13px;line-height:1.5;max-width:600px;}
+.dona-shop-filter.dona-collection-filter {padding:12px 0;}
+.dona-collection-grid > .uk-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 12px;margin:0!important;}
+.dona-collection-grid > .uk-grid > * {width:auto!important;max-width:none;padding:0!important;margin:0!important;min-width:0;}
+.dona-collection-grid > .uk-grid > :first-child {grid-column:span 2;grid-row:span 2;}
+.dona-collection-grid .el-item,.dona-collection-grid .el-item > a,.dona-collection-grid .uk-inline-clip,.dona-collection-grid picture {display:block;height:auto;}
+.dona-collection-grid > .uk-grid > :first-child .el-item {height:100%;min-height:100%;}
+.dona-collection-grid .el-item {position:relative;background:transparent;}
+.dona-collection-grid .el-image {display:block;width:100%;height:auto;aspect-ratio:3/4;background:#efedeb;object-fit:contain;}
+.dona-collection-grid > .uk-grid > :first-child .el-image {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;padding:0;}
+.dona-collection-grid .el-title {position:static;margin:20px 4px 0;font-family:'EB Garamond',serif;font-size:13.1px;line-height:18.38px;}
+.dona-collection-grid .el-content {position:static;margin:0 4px;font-family:'EB Garamond',serif;font-size:13.1px;line-height:18.38px;color:#4a4948;}
+.dona-collection-grid .el-meta {position:absolute;inset:12px 12px auto auto;z-index:2;max-width:calc(100% - 24px);box-sizing:border-box;margin:0;padding:6px 10px;background:#faf9f6;color:#161412;font:400 14px/1.4 'Work Sans',sans-serif;overflow-wrap:anywhere;}
+.dona-collection-grid .el-item > a:hover .el-title {text-decoration:none;}
+@media(max-width:959px){.dona-collection-grid > .uk-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.dona-collection-grid > .uk-grid > :first-child{grid-row:auto;aspect-ratio:4/5;}.dona-collection-intro > .uk-container,.dona-collection-catalog > .uk-container{padding-inline:12px;}}
+.dona-shop-intro > .uk-container,.dona-shop-catalog > .uk-container {max-width:none;padding-inline:24px;}
+.dona-shop-intro h1 {font-size:clamp(40px,4vw,64px);font-weight:400;}
+.dona-shop-intro .el-title {font-size:18px;font-weight:400;}
+.dona-shop-collections .el-image {display:block;width:100%;aspect-ratio:5/6;object-fit:cover;background:#efedeb;}
+.dona-shop-collections .el-item > a {color:inherit;text-decoration:none;}
+.dona-shop-filter {padding:18px 0;border-block:1px solid #161412;}
+.tm-element-woo-filter {position:sticky;top:0;z-index:50;background:#f5f3f1;border-block:1px solid #161412;}
+.admin-bar .tm-element-woo-filter {top:32px;}
+@media(min-width:601px) and (max-width:782px){.admin-bar .tm-element-woo-filter{top:46px;}}
+@media(max-width:600px){.admin-bar .tm-element-woo-filter{top:0;}}
+.dona-shop-filter .uk-button-text {font-style:italic;text-transform:none;font-size:18px;}
+.dona-shop-grid ul.products {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 10px;margin:0!important;padding:0;}
+.dona-shop-grid ul.products::before,.dona-shop-grid ul.products::after {display:none!important;}
+.dona-shop-grid ul.products li.product {position:relative;float:none!important;width:auto!important;margin:0!important;padding:0!important;min-width:0;}
+.dona-shop-grid ul.products li.product .el-image {margin:0;}
+.dona-shop-grid ul.products li.product .el-title {padding:0;margin:14px 4px 0;font-size:13.1px;line-height:18.38px;}
+.dona-shop-grid ul.products li.product .price {margin:0 4px;color:#4a4948;font-family:'EB Garamond',serif;font-size:13.1px;line-height:18.38px;}
+.dona-shop-grid ul.products li.product > .button {position:absolute;left:12px;right:12px;bottom:66px;margin:0;min-height:40px;padding:10px 12px;box-sizing:border-box;text-align:center;background:#020202;color:white;opacity:0;transform:translateY(5px);transition:opacity .2s ease,transform .2s ease;font-family:'EB Garamond',serif;font-style:italic;text-transform:none;z-index:3;pointer-events:none;}
+.dona-shop-grid ul.products li.product:hover > .button,.dona-shop-grid ul.products li.product:focus-within > .button {opacity:1;transform:none;pointer-events:auto;}
+#tm-element-woo-filter-offcanvas .uk-offcanvas-bar {width:min(440px,90vw);background:#f5f3f1;color:#161412;padding:30px;}
+#tm-element-woo-filter-offcanvas .uk-offcanvas-bar h2 {font-family:'Work Sans',sans-serif;font-size:20px;font-weight:500;letter-spacing:3px;color:#161412;border-bottom:1px solid #161412;padding:0 0 24px;margin:0 0 28px;}
+#tm-element-woo-filter-offcanvas .uk-offcanvas-bar h3 {font-family:'Work Sans',sans-serif;font-size:18px;font-weight:500;color:#161412;margin:28px 0 20px;}
+#tm-element-woo-filter-offcanvas .uk-offcanvas-close {color:#161412;top:29px;right:26px;}
+#tm-element-woo-filter-offcanvas ul {list-style:none;padding:0;margin:0;}
+#tm-element-woo-filter-offcanvas li {margin:0 0 15px;}
+#tm-element-woo-filter-offcanvas label,#tm-element-woo-filter-offcanvas a {font-family:'Work Sans',sans-serif;font-size:16px;color:#161412;white-space:normal;}
+#tm-element-woo-filter-offcanvas .uk-checkbox {width:18px;height:18px;border:1px solid #555;background-color:transparent;margin-right:10px;}
+#tm-element-woo-filter-offcanvas .uk-checkbox:checked {background-color:#161412;border-color:#161412;}
+#tm-element-woo-filter-offcanvas .count {font-size:12px;color:#737373;}
+#tm-element-woo-filter-offcanvas .dona-view-results {position:sticky;bottom:0;width:100%;margin-top:30px;border:1px solid #161412;background:#f5f3f1;color:#161412;font-family:'EB Garamond',serif;font-size:20px;font-style:italic;padding:14px;}
+@media(max-width:959px){.dona-shop-grid ul.products{grid-template-columns:repeat(2,minmax(0,1fr));}.dona-shop-intro > .uk-container,.dona-shop-catalog > .uk-container{padding-inline:16px;}}
+@media(hover:none){.dona-shop-grid ul.products li.product > .button{position:static;display:block;opacity:1;transform:none;pointer-events:auto;margin:10px 4px 0;min-height:44px;}}
+.woocommerce ul.products li.product a:hover .dona-shop-hover-image,
+.woocommerce ul.products li.product a:focus-visible .dona-shop-hover-image {opacity:1;}
+@media (prefers-reduced-motion:reduce) {.dona-shop-product-media .dona-shop-hover-image{transition:none;}}
+@media(max-width:959px){.dona-products.uk-section{padding:80px 0!important;}.dona-products > .uk-container{padding-inline:20px;}.dona-products-link{margin-bottom:36px;}}
+@media(max-width:479px){.dona-products.uk-section{padding:60px 0!important;}.dona-products > .uk-container{padding-inline:12px;}.dona-product-grid .el-meta{font-size:12px;inset-inline-start:10px;inset-block-start:8px;}.dona-product-grid .el-title,.dona-product-grid .el-content{font-size:13px;}.dona-products-title{font-size:29px;}}
+
+/* Keep the native media wrapper still while only the bag gently turns. */
+.dona-product-grid .el-item > a .uk-inline-clip {display:block;background:#efedeb;overflow:hidden;}
+.dona-product-grid .el-item > a .el-image {background:transparent;transform:none;transform-origin:50% 55%;transition:transform 550ms cubic-bezier(.22,.61,.36,1);}
+
+@media (prefers-reduced-motion:reduce) {
+    .dona-product-grid .el-item > a .el-image,
+    .dona-product-grid .el-item > a:hover .el-image {transform:none;transition:none;}
+}
+
+/* Cart drawer: scoped to the YOOtheme offcanvas, with a scrollable product list. */
+#dona-cart-drawer .uk-offcanvas-bar{width:min(520px,100vw);padding:0;background:#f5f3f1;color:#161412;border-left:1px solid #161412;display:flex;flex-direction:column;overflow:hidden}
+#dona-cart-drawer .dona-drawer-content{display:flex;flex-direction:column;min-height:0;flex:1}
+#dona-cart-drawer header{position:relative;padding:24px;border-bottom:1px solid #161412;flex-shrink:0}
+#dona-cart-drawer h2{font:500 24px/1.2 sans-serif;color:inherit;margin:0}
+#dona-cart-drawer .uk-offcanvas-close{top:24px;right:24px;color:inherit}
+#dona-cart-drawer a,#dona-cart-drawer summary{color:inherit}
+#dona-cart-drawer .dona-drawer-scroll{overflow-y:auto;flex:1;min-height:0;overscroll-behavior:contain}
+#dona-cart-drawer .dona-drawer-item{display:grid;grid-template-columns:100px 1fr auto;gap:20px;padding:24px;border-bottom:1px solid #161412;font:400 15px/1.5 sans-serif}
+#dona-cart-drawer .dona-drawer-item img{width:100px;height:125px;object-fit:contain;background:#efedeb}
+#dona-cart-drawer .dona-drawer-item strong{font-size:16px;white-space:nowrap}
+#dona-cart-drawer .dona-drawer-unit{margin:8px 0}
+#dona-cart-drawer .variation{font-size:12px;margin:4px 0}
+#dona-cart-drawer .variation dt,#dona-cart-drawer .variation dd{display:inline;margin:0 5px 0 0}
+#dona-cart-drawer .variation dd p{display:inline;margin:0}
+#dona-cart-drawer .dona-drawer-quantity{display:inline-flex;align-items:center;border:1px solid #161412;margin:8px 0;width:112px;justify-content:space-between;height:36px}
+#dona-cart-drawer button{cursor:pointer}
+#dona-cart-drawer .dona-drawer-quantity button{border:0;background:none;color:inherit;font-size:18px;width:36px;height:36px}
+#dona-cart-drawer .dona-drawer-remove{display:block;border:0;background:none;padding:0;color:inherit;text-transform:uppercase;font-size:12px;margin-top:6px}
+#dona-cart-drawer details{padding:20px 24px;border-bottom:1px solid #161412}
+#dona-cart-drawer summary{cursor:pointer;font:500 16px/1.4 sans-serif}
+#dona-cart-drawer details[open] summary{margin-bottom:16px}
+#dona-cart-drawer .uk-input,#dona-cart-drawer .uk-textarea{background:#fff;color:#161412;border:1px solid #777}
+#dona-cart-drawer .uk-button-default{border:1px solid #161412;color:#161412;margin-top:8px}
+#dona-cart-drawer footer{border-top:1px solid #161412;padding:24px;flex-shrink:0}
+#dona-cart-drawer .dona-drawer-subtotal{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;font:500 17px/1.4 sans-serif;text-transform:uppercase}
+#dona-cart-drawer .dona-drawer-subtotal strong{font-size:24px}
+#dona-cart-drawer .dona-drawer-terms{display:block;font-size:14px;margin-bottom:20px}
+#dona-cart-drawer .dona-drawer-terms input{margin-right:8px}
+#dona-cart-drawer .uk-button-primary{display:block;background:#000;color:#fff;border:1px solid #000;text-align:center;width:100%;box-sizing:border-box;font-size:18px;font-style:italic}
+#dona-cart-drawer .dona-drawer-footnote{font-size:12px;font-style:italic;text-align:center;margin:12px 0 0}
+#dona-cart-drawer .dona-drawer-status:empty{display:none}
+#dona-cart-drawer .dona-drawer-status{padding:8px 24px;margin:0;background:#fff;font-size:14px}
+#dona-cart-drawer[aria-busy=true] .dona-drawer-content{opacity:.65;pointer-events:none}
+#dona-cart-drawer .dona-drawer-empty{padding:24px}
+@media(max-width:480px){#dona-cart-drawer .dona-drawer-item{grid-template-columns:75px 1fr auto;gap:12px;padding:20px 16px}#dona-cart-drawer .dona-drawer-item img{width:75px;height:100px}#dona-cart-drawer .dona-drawer-item strong{font-size:14px}#dona-cart-drawer footer,#dona-cart-drawer header{padding:20px 16px}}
+#dona-cart-drawer.uk-offcanvas-overlay::before{background:rgba(0,0,0,.4)}
+
+/* Account: centered YOOtheme modal with native WooCommerce account forms. */
+#dona-account-modal .uk-modal-dialog{width:440px;max-width:calc(100vw - 32px);background:#f5f3f1;padding:36px;color:#161412}
+#dona-account-modal .dona-account-brand{text-align:center;font-size:20px;letter-spacing:4px;margin:0 0 18px}
+#dona-account-modal h2{text-align:center;font-size:28px;margin:0 0 24px;color:inherit}
+#dona-account-modal .dona-google-login{display:flex;gap:14px;justify-content:center;align-items:center;width:100%;min-height:46px;border:1px solid #a8a5a2;background:white;color:#555;font-size:14px}
+#dona-account-modal .dona-google-login span{font:bold 20px Arial;color:#4285f4}
+#dona-google-status{text-align:center;font-size:12px;color:#666;margin:8px 0}
+#dona-account-modal .dona-account-divider{text-align:center;font-size:12px;color:#777;margin:20px 0}
+#dona-account-modal .dona-account-tabs{display:flex;border-bottom:1px solid #bbb;margin-bottom:20px}
+#dona-account-modal .dona-account-tabs button{flex:1;background:none;border:0;border-bottom:2px solid transparent;padding:10px 0;color:#666;font-size:14px;cursor:pointer}
+#dona-account-modal .dona-account-tabs button[aria-pressed=true]{border-bottom-color:#000;color:#000}
+#dona-account-modal .col2-set{display:block;margin:0}
+#dona-account-modal .col2-set .col-1,#dona-account-modal .col2-set .col-2{float:none;width:100%;padding:0}
+#dona-account-modal .dona-account-forms h2{display:none}
+#dona-account-modal [data-account-view=login] .col-2,#dona-account-modal [data-account-view=register] .col-1{display:none}
+#dona-account-modal .woocommerce form{padding:0;border:0;margin:0}
+#dona-account-modal .woocommerce form .form-row{padding:0;margin:0 0 16px}
+#dona-account-modal .woocommerce label{font-size:13px;display:block;margin-bottom:6px}
+#dona-account-modal .woocommerce input.input-text{width:100%;height:44px;box-sizing:border-box;border:1px solid #aaa;background:#fff;color:#161412;padding:10px}
+#dona-account-modal .woocommerce .button{display:block;width:100%;background:#000;color:white;border:1px solid #000;box-sizing:border-box;min-height:44px;padding:8px 20px;line-height:1.4;border-radius:0;font-size:16px;font-weight:400;font-style:italic;margin-top:14px}
+#dona-account-modal .woocommerce p{font-size:13px;line-height:1.6}
+#dona-account-modal .woocommerce a{color:#161412}
+#dona-account-modal .uk-nav a{padding:12px 0;border-bottom:1px solid #d7d3ce;color:#161412}
+@media(max-width:480px){#dona-account-modal .uk-modal-dialog{padding:30px 24px}}
+
+/* Consistent quick purchase on all native product grids. */
+.dona-quick-cart-card{position:relative}
+.dona-quick-cart-card:hover .dona-home-cart,.dona-quick-cart-card:focus-within .dona-home-cart{opacity:1;pointer-events:auto}
+.woocommerce ul.products li.product .dona-home-cart{width:auto;left:auto;bottom:auto;margin:0;padding:7px 14px;min-height:34px;font-size:14px;line-height:1.3}
+.woocommerce ul.products li.product:hover .dona-shop-hover-image,.woocommerce ul.products li.product:focus-within .dona-shop-hover-image{opacity:1}
+.dona-quick-cart-card > a.added_to_cart{display:none}
+.dona-quick-cart-card > .dona-home-cart{position:absolute!important;left:auto!important;right:12px!important;bottom:auto!important;transform:none!important}
+
+/* Favorites drawer and product heart. */
+#dona-wishlist.uk-offcanvas-overlay::before{background:rgba(0,0,0,.4)}
+#dona-wishlist .uk-offcanvas-bar{width:min(520px,100vw);padding:0;background:#f5f3f1;color:#161412;border-left:1px solid #161412;display:flex;flex-direction:column;overflow:hidden}
+#dona-wishlist header{padding:24px;border-bottom:1px solid #161412;position:relative}
+#dona-wishlist h2{font:500 24px/1.2 sans-serif;margin:0;color:inherit}
+#dona-wishlist .uk-offcanvas-close{color:inherit;top:24px;right:24px}
+#dona-wishlist .dona-favorites-list{overflow-y:auto;flex:1;min-height:0}
+#dona-wishlist .dona-favorites-status{padding:0 24px;font-size:14px}
+#dona-wishlist .dona-favorites-status:empty{display:none}
+#dona-wishlist .dona-favorites-item{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:24px;border-bottom:1px solid #161412}
+#dona-wishlist .dona-favorites-item img{width:100px;height:125px;object-fit:contain;background:#efedeb}
+#dona-wishlist .el-title{font-size:16px;line-height:1.4;margin:0 0 8px;color:#161412}
+#dona-wishlist a{color:#161412}
+#dona-wishlist .dona-favorites-price{margin-bottom:12px}
+#dona-wishlist .dona-favorites-remove{display:block;border:0;background:none;color:#161412;padding:0;margin-top:12px;font-size:12px;text-transform:uppercase;cursor:pointer}
+#dona-wishlist .dona-favorites-add{display:inline-block;background:#000;color:#fff;border:0;font-family:inherit;font-style:italic;font-size:14px;padding:7px 14px;cursor:pointer}
+#dona-wishlist footer{border-top:1px solid #161412;padding:24px}
+#dona-wishlist footer p{font-size:12px;text-align:center;margin:0 0 12px}
+#dona-wishlist .uk-button-primary{display:block;background:#000;color:#fff}
+#dona-product-favorite{margin:18px 0}
+.dona-favorite-toggle{display:inline-flex;align-items:center;gap:8px;border:0;background:none;color:#161412;padding:8px 0;font:400 14px/1.4 sans-serif;cursor:pointer}
+.dona-favorite-toggle > span:first-child{font-size:25px;line-height:1}
+.dona-favorite-toggle:focus-visible{outline:2px solid #161412;outline-offset:4px}
+.dona-favorite-status{display:block;font-size:12px}
+
+/* Keep expanded product information readable inside the sticky details column. */
+.dona-product-details-column{padding-bottom:64px}
+.dona-product-details-column .uk-accordion{margin-bottom:32px}
+.dona-product-details-column .uk-accordion-title{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+.dona-product-details-column .uk-accordion-title::before{order:2;flex:none;float:none;width:9px;height:9px;margin:0 4px 4px 0;background:none;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
+.dona-product-details-column .uk-open > .uk-accordion-title::before{transform:rotate(225deg);margin-bottom:-4px}
+.dona-product-details-column .uk-accordion-content{padding-bottom:24px;overflow-wrap:anywhere}
+
+
+/* Separate the wishlist action and place native WooCommerce thumbnails at left. */
+#dona-product-favorite{border-block:1px solid #dedbd7;padding:20px 0;margin:24px 0}
+#dona-product-favorite .dona-favorite-toggle{font-size:17px;gap:12px}
+#dona-product-favorite .dona-favorite-toggle > span:first-child{font-size:30px}
+@media(min-width:640px){
+.single-product .woocommerce-product-gallery:has(.flex-control-thumbs){position:relative;box-sizing:border-box;padding-left:84px;padding-right:0}
+.single-product .woocommerce-product-gallery .flex-control-thumbs{position:absolute;top:32px;bottom:32px;left:0;right:auto;width:68px;margin:0!important;padding:0;display:flex;flex-direction:column;gap:8px;overflow-y:auto;scrollbar-width:none;list-style:none}
+.single-product .woocommerce-product-gallery .flex-control-thumbs::-webkit-scrollbar{display:none}
+.single-product .woocommerce-product-gallery .flex-control-thumbs li{width:100%!important;float:none!important;margin:0!important;flex:none}
+.single-product .woocommerce-product-gallery .flex-control-thumbs img{display:block;width:100%;height:88px;object-fit:cover;box-sizing:border-box;border:1px solid transparent;opacity:.7;cursor:pointer}
+.single-product .woocommerce-product-gallery .flex-control-thumbs img.flex-active{border-color:#161412;opacity:1}
+.dona-gallery-nav{position:absolute;left:0;right:auto;width:68px;height:28px;border:0;background:transparent;color:#161412;font-size:22px;cursor:pointer;z-index:3;line-height:1}
+.dona-gallery-nav-prev{top:0}.dona-gallery-nav-next{bottom:0}
+}
+@media(max-width:639px){.dona-gallery-nav{display:none}}
+@media(min-width:640px){.single-product .woocommerce-product-gallery:has(.flex-control-thumbs) .woocommerce-product-gallery__trigger{right:16px!important}}
+.dona-product-stacked-gallery img,.single-product .woocommerce-product-gallery{scroll-margin-top:64px}
+
+/* Images scroll within the natural height of the non-sticky product details. */
+@media(min-width:960px){
+.dona-product-details-column{align-self:flex-start!important}
+.dona-product-images-column{height:var(--dona-details-height,650px);max-height:var(--dona-details-height,650px);overflow-y:auto;overflow-x:hidden;align-self:flex-start!important;scrollbar-width:none;overscroll-behavior-y:contain}
+.dona-product-images-column::-webkit-scrollbar{display:none}
+}
+@media(min-width:960px){
+.dona-product-gallery-shell{position:relative;width:50%;box-sizing:border-box;padding-left:84px!important;height:var(--dona-details-height,650px)}
+.dona-product-gallery-shell > .dona-product-images-column{width:100%!important;padding-left:0!important;padding-right:0!important}
+.dona-product-gallery-shell .woocommerce-product-gallery{padding-left:0!important}
+.dona-product-thumbnail-rail{position:absolute;left:0;top:0;bottom:0;width:68px}
+.dona-product-thumbnail-rail .flex-control-thumbs{position:absolute;top:32px;bottom:32px;left:0;width:68px;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;overflow:auto;scrollbar-width:none;list-style:none}
+.dona-product-thumbnail-rail .flex-control-thumbs li{width:100%!important;flex:none;margin:0!important}
+.dona-product-thumbnail-rail img{width:68px;height:88px;object-fit:cover;box-sizing:border-box;border:1px solid transparent;cursor:pointer;opacity:.7}
+.dona-product-thumbnail-rail img.flex-active{border-color:#161412;opacity:1}
+}
+@media(min-width:960px){.dona-product-gallery-shell{padding-left:124px!important}.dona-product-thumbnail-rail{left:40px}}
+
+/* Compact size and wishlist controls. */
+.single-product .dona-size-select{position:absolute!important;width:1px!important;height:1px!important;clip-path:inset(50%);overflow:hidden;opacity:0}
+.single-product .dona-size-row{border-top:1px solid #dedbd7}
+.single-product .dona-size-row th,.single-product .dona-size-row td{display:block;width:100%;padding:12px 0!important;text-align:left}
+.single-product .dona-size-row label{display:flex;align-items:center;gap:5px;font:400 15px/1.5 sans-serif}
+.single-product .dona-current-size{font-weight:600}
+.single-product .dona-size-stock{display:inline-block;margin-left:10px;padding:4px 8px;background:#e4f3e6;color:#00854a;border-radius:4px;font:400 11px/1.4 sans-serif}
+.single-product .dona-size-stock:empty{display:none}
+.single-product .dona-size-stock.is-unavailable{background:#eee;color:#666}
+.single-product .dona-size-options{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.single-product .dona-size-options button{border:1px solid #aaa;border-radius:5px;background:transparent;color:#161412;padding:8px 14px;min-width:54px;min-height:36px;font:400 13px/1.4 sans-serif;cursor:pointer}
+.single-product .dona-size-options button[aria-pressed=true]{border:2px solid #000;padding:7px 13px}
+.single-product .dona-size-options button:disabled{opacity:.4;cursor:default}
+#dona-product-favorite{padding:14px 0;margin:18px 0}
+#dona-product-favorite .dona-favorite-toggle{font-size:14px;gap:8px;padding:6px 0}
+#dona-product-favorite .dona-favorite-toggle > span:first-child{font-size:23px}
+
+/* Small header-family heart and product sharing popover. */
+#dona-product-favorite .dona-favorite-toggle{border:0!important;box-shadow:none!important;background:transparent!important;font-size:13px;gap:8px;padding:4px 0}
+#dona-product-favorite .dona-favorite-icon{display:inline-flex;width:18px;height:18px;align-items:center}
+#dona-product-favorite .dona-favorite-icon svg{width:18px;height:16px}
+#dona-product-favorite .is-saved .dona-favorite-icon path{fill:#161412}
+#dona-product-favorite .dona-favorite-toggle:focus-visible{outline:1px solid #777;outline-offset:4px}
+#dona-product-share{position:relative;display:flex;justify-content:flex-end;margin:0 0 16px}
+.dona-share-toggle{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:4px;background:none;border:0;color:#161412;cursor:pointer}
+.dona-share-popup{box-sizing:border-box;width:340px;max-width:calc(100vw - 32px);padding:24px;background:#fff;color:#161412;border:1px solid #ccc;border-radius:5px;box-shadow:0 4px 16px #0000000d;z-index:1010}
+.dona-share-popup h3{font:600 16px/1.4 sans-serif;color:#161412;margin:0 0 16px}
+.dona-share-close{position:absolute;right:14px;top:14px;border:0;background:none;color:#161412;cursor:pointer}
+.dona-share-copy{display:flex;border:1px solid #ccc;border-radius:4px;background:#f8f8f8;padding:8px}
+.dona-share-copy input{width:100%;min-width:0;background:transparent;border:0;color:#666;text-overflow:ellipsis;font:14px/1.5 sans-serif}
+.dona-copy-link{flex:none;width:28px;border:0;background:none;color:#666;cursor:pointer}
+.dona-share-status{font-size:12px;margin:8px 0 18px;min-height:16px}
+.dona-share-networks{display:flex;justify-content:space-between;gap:12px}
+.dona-share-networks a{color:#333;padding:4px}
+
+/* Plain color swatches; availability is shown beside the size choice. */
+.single-product .dona-product-details-column .stock{display:none!important}
+.single-product .dona-color-row{border-top:1px solid #dedbd7}
+.single-product .dona-color-row th,.single-product .dona-color-row td{padding-top:16px!important}
+.single-product .dona-color-swatch{width:28px;height:28px;padding:3px;border:1px solid #bbb;border-radius:50%;background:transparent}
+.single-product .dona-color-swatch::after{inset:3px;height:auto;border-radius:50%;background:var(--dona-swatch-color)}
+.single-product .dona-color-swatch[aria-pressed=true]{border:2px solid #161412;padding:2px}
+.single-product .dona-color-swatches{gap:12px;margin:10px 0 18px}
+
+/* One spacing rhythm for product options, divider rows and detail headings. */
+.single-product .dona-product-details-column{--dona-detail-space:20px;--dona-detail-gap:10px;--dona-detail-border:#dedbd7}
+.single-product .dona-product-details-column .variations{margin-bottom:var(--dona-detail-space)}
+.single-product .dona-product-details-column :is(.dona-color-row,.dona-size-row){border-top:1px solid var(--dona-detail-border)}
+.single-product .dona-product-details-column :is(.dona-color-row,.dona-size-row) th,
+.single-product .dona-product-details-column :is(.dona-color-row,.dona-size-row) td{display:block;width:100%;box-sizing:border-box;text-align:start}
+.single-product .dona-product-details-column :is(.dona-color-row,.dona-size-row) th{padding:var(--dona-detail-space) 0 var(--dona-detail-gap)!important}
+.single-product .dona-product-details-column :is(.dona-color-row,.dona-size-row) td{padding:0 0 var(--dona-detail-space)!important}
+.single-product .dona-product-details-column :is(.dona-color-swatches,.dona-size-options){margin:0}
+.single-product .dona-product-details-column #dona-product-favorite{padding:var(--dona-detail-space) 0;margin:var(--dona-detail-space) 0 0!important;border-block:1px solid var(--dona-detail-border)}
+.single-product .dona-product-details-column #dona-product-favorite .dona-favorite-toggle{padding:0;min-height:24px}
+.single-product .dona-product-details-column :is(.uk-accordion,[uk-accordion]){margin:0 0 var(--dona-detail-space)!important}
+.single-product .dona-product-details-column :is(.uk-accordion,[uk-accordion]) > *{margin-top:0!important;padding:0}
+.single-product .dona-product-details-column :is(.uk-accordion,[uk-accordion]) > * + *{border-top:1px solid var(--dona-detail-border)!important}
+.single-product .dona-product-details-column .uk-accordion-title{padding:var(--dona-detail-space) 0;font-size:16px;line-height:24px}
+.single-product .dona-product-details-column [uk-accordion] > :first-child > .uk-accordion-title{padding-top:var(--dona-detail-gap)}
+.single-product .dona-product-details-column .uk-accordion-content{margin-top:0;padding:0 0 var(--dona-detail-space);overflow-wrap:anywhere}
+.single-product .dona-product-details-column .uk-accordion-content > :first-child{margin-top:0}
+.single-product .dona-product-details-column .uk-accordion-content > :last-child{margin-bottom:0}
+.single-product .dona-product-details-column .uk-accordion-content :is(h2,h3,h4){margin-top:var(--dona-detail-space);margin-bottom:var(--dona-detail-gap)}
+.single-product .dona-product-details-column .uk-accordion-content :is(h2,h3,h4):first-child{margin-top:0}
+.single-product .dona-product-details-column .uk-margin-medium:has(> [uk-accordion]){margin-top:0!important}
+
+/* Equal-width, equal-height quantity and purchase controls at every breakpoint. */
+.single-product .dona-product-details-column .woocommerce-variation-add-to-cart,
+.single-product .dona-product-details-column form.cart:has(> .quantity){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch}
+.single-product .dona-product-details-column form.cart .quantity{float:none!important;width:100%!important;min-width:0;margin:0!important}
+.single-product .dona-product-details-column form.cart .quantity .qty{box-sizing:border-box;width:100%!important;max-width:none;min-height:48px;height:100%;margin:0;text-align:center}
+.single-product .dona-product-details-column form.cart .single_add_to_cart_button{box-sizing:border-box;float:none!important;display:flex;align-items:center;justify-content:center;width:100%!important;min-width:0;min-height:48px;margin:0!important;padding:10px 12px;line-height:1.4;white-space:normal}
+.single-product .dona-product-details-column .woocommerce-variation-add-to-cart:not(:has(> .quantity input:not([type=hidden]))) > .single_add_to_cart_button{grid-column:1/-1}
+
+/* Complete color image sets, with the existing fixed thumbnail rail. */
+.dona-product-images-column [hidden],.dona-product-thumbnail-rail [hidden]{display:none!important}
+.dona-color-image-stack{display:grid;gap:10px}
+.dona-color-image a,.dona-color-image img{display:block;width:100%;height:auto}
+.dona-color-image{scroll-margin-top:64px}
+.dona-color-gallery-nav{display:flex;gap:8px;overflow:auto;scrollbar-width:none}
+.dona-color-gallery-nav button{padding:0;border:1px solid transparent;background:#efedeb;cursor:pointer;flex:none}
+.dona-color-gallery-nav button[aria-pressed=true]{border-color:#161412}
+.dona-color-gallery-nav img{display:block;width:66px;height:86px;object-fit:cover}
+@media(min-width:960px){.dona-product-thumbnail-rail .dona-color-gallery-nav{position:absolute;inset:0;flex-direction:column}.dona-product-thumbnail-rail .dona-color-gallery-nav button{width:68px}}
+@media(max-width:959px){.dona-color-gallery-nav{margin-bottom:12px}}
+
+/* Keep an intentionally empty color-specific lower gallery from leaving a gap. */
+.dona-lower-media-empty { display: none !important; }
+
+@media(max-width:959px){
+.dona-product-gallery-shell{display:flex;flex-direction:column;width:100%;height:auto;padding-left:0!important}
+.dona-product-thumbnail-rail{position:static;order:-1;width:100%}
+}
+
+/* Small-screen gallery: one image at a time with native swipe and keyboard controls. */
+.dona-product-slider-controls{display:none}
+.dona-product-slider-controls[hidden]{display:none!important}
+@media(max-width:959px){
+.single-product .dona-product-gallery-shell > .dona-product-images-column{box-sizing:border-box;width:100%!important;max-width:100%;padding-inline:0!important;height:auto;max-height:none;overflow:visible;min-width:0}
+.single-product .dona-color-image-stack{display:flex;gap:0;max-width:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none}
+.single-product .dona-color-image-stack::-webkit-scrollbar{display:none}
+.single-product .dona-color-image-stack:focus-visible{outline:2px solid #161412;outline-offset:2px}
+.single-product .dona-color-image-stack > .dona-color-image{flex:0 0 100%;min-width:0;aspect-ratio:4/5;scroll-snap-align:start;scroll-snap-stop:always;background:#efedeb}
+.single-product .dona-color-image-stack > .dona-color-image a{height:100%}
+.single-product .dona-color-image-stack > .dona-color-image img{width:100%;height:100%;object-fit:contain}
+.single-product .dona-product-thumbnail-rail{order:1;margin-top:12px}
+.single-product .dona-product-slider-controls{order:2;display:flex;align-items:center;justify-content:center;gap:18px;padding:8px 0 16px;font:400 13px/1.5 'Work Sans',sans-serif}
+.single-product .dona-product-slider-controls button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #dedbd7;background:transparent;color:#161412;cursor:pointer;font-size:20px}
+.single-product .dona-product-slider-controls button:disabled{opacity:.35;cursor:default}
+.single-product .dona-product-slider-controls button:focus-visible{outline:2px solid #161412;outline-offset:3px}
+}
+@media(max-width:959px){.single-product .dona-product-gallery-shell{margin-top:24px}}
+
+/* Product reviews below the price, with real totals and an expandable review form. */
+.single-product .dona-product-reviews{border-block:1px solid #dedbd7;margin:16px 0 20px}
+.single-product .dona-product-reviews > summary{display:flex;align-items:center;gap:10px;min-height:46px;padding:10px 0;box-sizing:border-box;cursor:pointer;list-style:none;font-size:13px}
+.single-product .dona-product-reviews > summary::-webkit-details-marker{display:none}
+.single-product .dona-product-reviews > summary:focus-visible{outline:2px solid #161412;outline-offset:3px}
+.single-product .dona-product-reviews .star-rating{float:none;margin:0;color:#161412}
+.single-product .dona-empty-stars{font-size:19px;letter-spacing:1px;line-height:1}
+.single-product .dona-product-reviews-content{padding:16px 0 20px}
+
+/* Keep price and reviews together, with reviews at the end of the row. */
+.single-product .dona-price-review-row{align-items:flex-start;flex-wrap:nowrap;margin-left:0;padding-bottom:var(--dona-detail-space);margin-bottom:var(--dona-detail-space)!important;border-bottom:1px solid var(--dona-detail-border)}
+.single-product .dona-price-review-row > .dona-price-review-price{padding-left:0}
+.single-product .dona-price-review-row > .dona-price-review-price{width:auto;flex:0 0 auto}
+.single-product .dona-price-review-row > .dona-price-review-rating{width:auto;flex:1;min-width:0}
+.single-product .dona-price-review-row .price{margin:0;min-height:46px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.single-product .dona-price-review-row .dona-product-reviews{margin:0;border:0}
+.single-product .dona-price-review-row .dona-product-reviews > summary{justify-content:flex-end;flex-wrap:wrap;text-align:end}
+
+@media(max-width:479px){.dona-product-grid.dona-collection-grid .el-meta{inset:8px 8px auto auto;font-size:13px;padding:5px 8px;max-width:calc(100% - 16px)}}
+/* Thin outline icons match the header's 20px / 1.25px icon family. */
+.dona-shipping-timeline{box-sizing:border-box;width:100%;margin:20px 0;background:transparent;border:1px solid #000;border-radius:0;padding:16px;color:#635b4f}
+.dona-shipping-timeline ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:0}
+.dona-shipping-timeline li{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0;text-align:center;font:400 11px/1.5 'Work Sans',sans-serif}
+.dona-shipping-timeline li::after{content:'';position:absolute;top:10px;left:calc(50% + 18px);width:calc(100% - 36px);height:1px;background:#a29b8e}
+.dona-shipping-timeline li:last-child::after{content:none}
+.dona-shipping-icon{display:block;width:20px;height:20px;margin-bottom:3px;color:#1a1a1a}
+.dona-shipping-icon svg{display:block;width:20px;height:20px;stroke:#1a1a1a;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.dona-shipping-timeline strong{font-weight:500;font-size:10px;white-space:nowrap}
+.dona-shipping-timeline p{margin:8px 0 0;font:400 10px/1.4 'Work Sans',sans-serif;text-align:center;color:#635f5b}
+@media(max-width:359px){.dona-shipping-timeline{padding-inline:8px}.dona-shipping-timeline strong{font-size:9px}}
+/* Keep the cart drawer's unit price beneath the name, without a duplicate column. */
+#dona-cart-drawer .dona-drawer-item > strong{display:none}
+#dona-cart-drawer .dona-drawer-item{grid-template-columns:100px minmax(0,1fr)}
+@media(max-width:480px){#dona-cart-drawer .dona-drawer-item{grid-template-columns:75px minmax(0,1fr)}}
+#dona-cart-drawer .dona-drawer-item[hidden]{display:none!important}
+#dona-cart-drawer .dona-drawer-status:empty{display:none}
+#dona-cart-drawer .dona-drawer-status:not(:empty){flex:none;margin:12px 16px;padding:12px 14px;border:1px solid #000;background:#fff;color:#000;font:400 14px/1.5 'Work Sans',sans-serif}
+#dona-cart-drawer button:disabled{opacity:.5;cursor:wait}
+#dona-cart-removed{z-index:100030}
+#dona-cart-removed .uk-modal-dialog{background:#fff;color:#000;border:1px solid #000;border-radius:0}
+#dona-cart-removed h2{color:#000;font:400 32px/1.2 'EB Garamond',serif}
+#dona-cart-removed p{color:#000;font:400 14px/1.6 'Work Sans',sans-serif}
+#dona-cart-removed .uk-button{background:#000;color:#fff;border:1px solid #000;border-radius:0;font-size:14px}
+#dona-cart-removed .uk-modal-close-default{color:#000}
+#dona-cart-removed .uk-modal-dialog{text-align:center}
+#dona-cart-drawer .dona-drawer-item > a:first-child{display:flex;align-items:center;justify-content:center;overflow:visible}
+#dona-cart-drawer .dona-drawer-item img{object-fit:contain;object-position:center;border-radius:0}
+/* Keep the model's head visible in the first Shop collection card. */
+.dona-shop-collections .uk-grid > :first-child .el-image{object-position:center top}
+.dona-demo-notice,.dona-demo-notice small{color:#625b55}
+.single-product .dona-size-stock{color:#006239}
+
+/* Mobile product cards: the same native text-button effect below the price. */
+@media(max-width:959px){
+ .dona-quick-cart-card .dona-home-cart,
+ .woocommerce ul.products li.product .dona-home-cart{position:relative!important;inset:auto!important;display:table;width:auto;max-width:calc(100% - 8px);min-height:44px;margin:0 4px;padding:10px 0;border:0;background:transparent;color:#161412;opacity:1;pointer-events:auto;font-size:14px;line-height:1.4;text-align:left;text-transform:none;white-space:normal;transform:none!important}
+ .dona-quick-cart-card .dona-home-cart.uk-button-text::before,
+ .single-product .dona-product-details-column form.cart .single_add_to_cart_button::before{display:none}
+ .dona-quick-cart-card .dona-home-cart:disabled{opacity:.6}
+ .dona-quick-cart-card .dona-home-cart.uk-button-text,
+ .woocommerce ul.products li.product .dona-home-cart.uk-button-text,
+ .single-product .dona-product-details-column form.cart .single_add_to_cart_button{background:transparent!important;color:#161412!important;border:0!important;border-radius:0;box-shadow:none;font-family:'Work Sans',sans-serif;font-size:12.6px;font-weight:300;font-style:normal;letter-spacing:.378px;text-transform:none;text-decoration:none!important;cursor:pointer}
+ .single-product .dona-product-details-column form.cart .single_add_to_cart_button{display:inline-flex;justify-self:start;width:auto!important;max-width:100%;min-height:44px;padding:8px 0;line-height:1.3}
+ .single-product .dona-product-details-column form.cart .single_add_to_cart_button:disabled{opacity:.5;cursor:not-allowed}
+ .single-product .dona-product-details-column form.cart .single_add_to_cart_button:focus-visible{outline:2px solid #161412;outline-offset:4px}
+}
+
+/* Keep the mobile purchase action with its price, outside the product image link. */
+@media(max-width:959px){
+ .dona-card-inline-purchase > a{flex:none!important}
+ .dona-card-mobile-content{background:var(--dona-card-content-background,transparent)}
+ .dona-card-mobile-content .dona-card-title-link{color:inherit;font:inherit;text-decoration:none}
+ .dona-card-mobile-content .dona-card-title-link:hover{text-decoration:underline;text-underline-offset:3px}
+}
+
+/* Establish the mobile reading order before the gallery enhancement runs. */
+@media(max-width:959px){
+ .single-product .dona-product-details-column{order:-1}
+}

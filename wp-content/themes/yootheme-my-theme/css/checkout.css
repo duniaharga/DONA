@@ -1,0 +1,44 @@
+/* Static labels preserve WooCommerce Blocks associations and validation. */
+body.woocommerce-checkout .wc-block-components-text-input,
+body.woocommerce-checkout .wc-blocks-components-select__container{display:flex;flex-direction:column;gap:8px;margin-top:0}
+body.woocommerce-checkout .wc-block-components-text-input label,
+body.woocommerce-checkout .wc-blocks-components-select__label{position:static!important;order:-1;transform:none!important;top:auto;left:auto;max-width:100%;width:auto;height:auto;margin:0;padding:0;overflow:visible;clip:auto;clip-path:none;white-space:normal;font:400 14px/1.5 'Work Sans',sans-serif;color:#161412}
+body.woocommerce-checkout .wc-block-components-text-input input,
+body.woocommerce-checkout .wc-block-components-text-input.is-active input,
+body.woocommerce-checkout .wc-blocks-components-select__select,
+body.woocommerce-checkout textarea{box-sizing:border-box;border-radius:0!important;min-height:48px;padding:12px!important;font-size:16px;line-height:1.5}
+body.woocommerce-checkout input::placeholder,
+body.woocommerce-checkout textarea::placeholder{color:transparent!important;opacity:0}
+body.woocommerce-checkout .wc-block-components-address-form{row-gap:0}
+body.woocommerce-checkout .wc-block-components-address-form > .wc-block-components-text-input,
+body.woocommerce-checkout .wc-block-components-address-form > .wc-block-components-country-input,
+body.woocommerce-checkout .wc-block-components-address-form > .wc-block-components-state-input{margin-top:20px}
+body.woocommerce-checkout .wc-block-components-address-form > .wc-block-components-address-form__first_name,
+body.woocommerce-checkout .wc-block-components-address-form > .wc-block-components-address-form__last_name{margin-top:0}
+body.woocommerce-checkout .wc-blocks-components-select__expand{top:auto;bottom:12px;transform:none}
+body.woocommerce-checkout .wc-block-components-combobox .wc-block-components-combobox-control input{border-radius:0!important}
+/* Compact order items, retaining the selected size and colour. */
+body.woocommerce-checkout .wc-block-components-order-summary-item .wc-block-components-product-metadata__description{display:none}
+body.woocommerce-checkout .wc-block-components-order-summary-item{padding-block:20px;border-bottom:1px solid #ceccca}
+body.woocommerce-checkout .wc-block-components-order-summary-item:last-child{border-bottom:0}
+body.woocommerce-checkout .wc-block-components-order-summary-item__image{width:80px;flex:0 0 80px;max-width:80px}
+body.woocommerce-checkout .wc-block-components-order-summary-item__image img{display:block;width:80px;height:96px;max-width:100%;object-fit:contain;object-position:center;border-radius:0;background:transparent}
+@media(max-width:479px){body.woocommerce-checkout .wc-block-components-order-summary-item__image{width:64px;flex-basis:64px;max-width:64px}body.woocommerce-checkout .wc-block-components-order-summary-item__image img{width:64px;height:80px}}
+/* Match country/state selectors to the other checkout fields. */
+body.woocommerce-checkout .wc-blocks-components-select,
+body.woocommerce-checkout .wc-blocks-components-select__container{background:transparent;border-radius:0}
+body.woocommerce-checkout .wc-blocks-components-select__select{background-color:#fff!important;color:#161412}
+body.woocommerce-checkout .wc-block-components-text-input label,
+body.woocommerce-checkout .wc-blocks-components-select__label,
+body.woocommerce-checkout .wc-block-components-combobox label{font-size:16px!important;line-height:1.5}
+/* Keep the product title and its unit price close together. */
+body.woocommerce-checkout .wc-block-components-order-summary-item__description .wc-block-components-product-name{margin-bottom:4px;padding-bottom:0}
+body.woocommerce-checkout .wc-block-components-order-summary-item__description .wc-block-cart-item__prices{margin-top:0;padding-top:0}
+/* Show one price beneath the product name, without the duplicate right column. */
+body.woocommerce-checkout .wc-block-components-order-summary-item__total-price{display:none}
+body.woocommerce-checkout .wc-block-components-order-summary-item__description{display:flex;flex-direction:column;justify-content:flex-start;gap:4px;align-self:center;flex:1;min-width:0}
+body.woocommerce-checkout .wc-block-components-order-summary-item__description .wc-block-components-product-name{margin:0;padding:0;min-height:0}
+body.woocommerce-checkout .wc-block-components-order-summary-item__description .wc-block-cart-item__prices{margin:0;padding:0;min-height:0;flex-grow:0}
+body.woocommerce-checkout .wc-block-components-checkout-place-order-button,
+body.woocommerce-checkout .wc-block-components-checkout-place-order-button .wc-block-components-button__text,
+body.woocommerce-checkout #place_order{font-size:18px;line-height:1.4}

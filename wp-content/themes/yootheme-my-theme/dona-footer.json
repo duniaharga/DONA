@@ -1,0 +1,351 @@
+{
+  "type": "layout",
+  "version": "4.5.28",
+  "name": "DONA Footer",
+  "children": [
+    {
+      "type": "section",
+      "props": {
+        "name": "DONA footer",
+        "style": "muted",
+        "width": "default",
+        "padding": "small",
+        "html_element": "section",
+        "class": "dona-footer"
+      },
+      "children": [
+        {
+          "type": "row",
+          "props": {
+            "column_gap": "medium",
+            "row_gap": "large",
+            "margin": "remove-vertical",
+            "name": "Brand, Shop, About, Concierge and newsletter",
+            "layout": "1-4,1-6,1-6,1-6,1-4",
+            "class": "dona-footer-main"
+          },
+          "children": [
+            {
+              "type": "column",
+              "props": {
+                "width_medium": "1-1",
+                "width_large": "1-4",
+                "class": "dona-footer-brand",
+                "width_default": "1-1"
+              },
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "DONA",
+                    "title_element": "div",
+                    "title_style": "heading-small",
+                    "title_font_family": "primary",
+                    "margin": "remove-vertical",
+                    "class": "dona-footer-wordmark"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "content": "Elegant bags that bring style and practicality together, from work to wherever life takes you.",
+                    "text_style": "small",
+                    "maxwidth": "small",
+                    "margin": "small",
+                    "class": "dona-footer-brand-copy"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "props": {
+                "width_medium": "1-3",
+                "width_large": "1-6",
+                "class": "dona-footer-shop",
+                "width_default": "1-3"
+              },
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "Shop",
+                    "title_element": "h3",
+                    "title_style": "text-small",
+                    "margin": "remove-vertical",
+                    "class": "dona-footer-heading"
+                  }
+                },
+                {
+                  "type": "list",
+                  "props": {
+                    "show_image": false,
+                    "show_link": true,
+                    "list_type": "vertical",
+                    "list_marker": "",
+                    "list_size": "collapse",
+                    "content_style": "text-muted",
+                    "link_style": "muted",
+                    "margin": "small",
+                    "list_element": "ul",
+                    "class": "dona-footer-links"
+                  },
+                  "children": [
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "Shop All",
+                        "link": "/shop/"
+                      }
+                    },
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "New Arrivals",
+                        "link": "/shop/?orderby=date"
+                      }
+                    },
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "Collections",
+                        "link": "/shop/#collections"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "props": {
+                "width_medium": "1-3",
+                "width_large": "1-6",
+                "class": "dona-footer-about",
+                "width_default": "1-3"
+              },
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "About",
+                    "title_element": "h3",
+                    "title_style": "text-small",
+                    "margin": "remove-vertical",
+                    "class": "dona-footer-heading"
+                  }
+                },
+                {
+                  "type": "list",
+                  "props": {
+                    "show_image": false,
+                    "show_link": true,
+                    "list_type": "vertical",
+                    "list_marker": "",
+                    "list_size": "collapse",
+                    "content_style": "text-muted",
+                    "link_style": "muted",
+                    "margin": "small",
+                    "list_element": "ul",
+                    "class": "dona-footer-links"
+                  },
+                  "children": [
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "Our Story",
+                        "link": "/about/"
+                      }
+                    },
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "Newsletter",
+                        "link": "#newsletter"
+                      }
+                    },
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "My Account",
+                        "link": "/my-account/"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "props": {
+                "width_medium": "1-3",
+                "width_large": "1-6",
+                "class": "dona-footer-concierge",
+                "width_default": "1-3"
+              },
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "Concierge",
+                    "title_element": "h3",
+                    "title_style": "text-small",
+                    "margin": "remove-vertical",
+                    "class": "dona-footer-heading"
+                  }
+                },
+                {
+                  "type": "list",
+                  "props": {
+                    "show_image": false,
+                    "show_link": true,
+                    "list_type": "vertical",
+                    "list_marker": "",
+                    "list_size": "collapse",
+                    "content_style": "text-muted",
+                    "link_style": "muted",
+                    "margin": "small",
+                    "list_element": "ul",
+                    "class": "dona-footer-links"
+                  },
+                  "children": [
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "Returns",
+                        "link": "/refund_returns/"
+                      }
+                    },
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "Privacy Policy",
+                        "link": "/privacy-policy/"
+                      }
+                    },
+                    {
+                      "type": "list_item",
+                      "props": {
+                        "content": "Orders",
+                        "link": "/my-account/orders/"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "props": {
+                "width_medium": "1-1",
+                "width_large": "1-4",
+                "class": "dona-footer-newsletter",
+                "width_default": "1-1"
+              },
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "Subscribe to our Newsletter",
+                    "title_element": "h3",
+                    "title_style": "text-large",
+                    "title_font_family": "primary",
+                    "margin": "remove-vertical",
+                    "class": "dona-footer-heading"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "content": "Be the first to discover new collections, exclusive updates, and stories from the DONA studio.",
+                    "text_style": "small",
+                    "margin": "small"
+                  }
+                },
+                {
+                  "type": "newsletter",
+                  "props": {
+                    "id": "newsletter",
+                    "layout": "grid",
+                    "show_name": false,
+                    "gap": "collapse",
+                    "form_size": "",
+                    "form_style": "",
+                    "label_email": "Your email address",
+                    "label_button": "Subscribe",
+                    "button_mode": "button",
+                    "button_style": "text",
+                    "provider": {
+                      "name": "mailchimp",
+                      "after_submit": "message",
+                      "message": "Please check your inbox to confirm your subscription.",
+                      "redirect": ""
+                    },
+                    "mailchimp": {
+                      "client_id": "",
+                      "list_id": "",
+                      "double_optin": true
+                    },
+                    "margin": "small",
+                    "class": "dona-footer-signup"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "props": {
+            "layout": "1-2,1-2",
+            "column_gap": "small",
+            "row_gap": "small",
+            "margin": "large",
+            "name": "Copyright and currency",
+            "class": "dona-footer-bottom"
+          },
+          "children": [
+            {
+              "type": "column",
+              "props": {
+                "width_default": "1-1",
+                "width_small": "1-2"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "props": {
+                    "content": "\u00a9 2026 DONA",
+                    "text_style": "small",
+                    "text_color": "muted",
+                    "margin": "remove-vertical"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "props": {
+                "width_default": "1-1",
+                "width_small": "1-2"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "props": {
+                    "content": "United States Dollar (USD $)",
+                    "text_style": "small",
+                    "text_align": "right",
+                    "text_align_fallback": "left",
+                    "text_align_breakpoint": "m",
+                    "margin": "remove-vertical"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

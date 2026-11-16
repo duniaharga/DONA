@@ -1,0 +1,133 @@
+{
+    "type": "layout",
+    "children": [
+        {
+            "type": "section",
+            "props": {
+                "class": "dona-collections",
+                "id": "collections",
+                "style": "default",
+                "padding": "none",
+                "width": "expand",
+                "name": "DONA \u2014 Product collections"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": [],
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "Find Your Everyday",
+                                        "title_element": "h2",
+                                        "class": "dona-collections-title",
+                                        "text_align": "center"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "A collection for every part of your day.",
+                                        "class": "dona-collections-intro",
+                                        "text_align": "center"
+                                    }
+                                },
+                                {
+                                    "type": "button",
+                                    "props": {
+                                        "class": "dona-collections-link",
+                                        "text_align": "center"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "button_item",
+                                            "props": {
+                                                "content": "Explore Collections",
+                                                "link": "#collection-cards",
+                                                "button_style": "text"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "grid",
+                                    "props": {
+                                        "id": "collection-cards",
+                                        "class": "dona-collection-cards",
+                                        "grid_default": "1",
+                                        "grid_small": "3",
+                                        "grid_medium": "3",
+                                        "grid_column_gap": "small",
+                                        "grid_row_gap": "small",
+                                        "panel_style": "card-default",
+                                        "panel_padding": "default",
+                                        "panel_image_no_padding": true,
+                                        "panel_link": true,
+                                        "panel_link_hover": false,
+                                        "show_title": true,
+                                        "show_content": true,
+                                        "show_image": true,
+                                        "show_link": true,
+                                        "show_meta": false,
+                                        "link_text": "",
+                                        "title_element": "h3",
+                                        "image_width": "618",
+                                        "image_height": "854",
+                                        "image_align": "top",
+                                        "title_margin": "remove",
+                                        "content_margin": "small",
+                                        "item_animation": false
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "grid_item",
+                                            "props": {
+                                                "title": "MIRA",
+                                                "content": "Ease for every day.",
+                                                "image": "http://localhost:8895/wp-content/uploads/2026/11/dona-mira-collection.png",
+                                                "image_alt": "MIRA tan leather shoulder bag",
+                                                "link": "http://localhost:8895/product-category/mira/",
+                                                "link_aria_label": "Shop the MIRA collection"
+                                            }
+                                        },
+                                        {
+                                            "type": "grid_item",
+                                            "props": {
+                                                "title": "ELIA",
+                                                "content": "Elegance for work and study.",
+                                                "image": "http://localhost:8895/wp-content/uploads/2026/11/dona-elia-collection.png",
+                                                "image_alt": "ELIA brown and black structured bags",
+                                                "link": "http://localhost:8895/product-category/elia/",
+                                                "link_aria_label": "Shop the ELIA collection"
+                                            }
+                                        },
+                                        {
+                                            "type": "grid_item",
+                                            "props": {
+                                                "title": "LUMA",
+                                                "content": "A touch of evening elegance.",
+                                                "image": "http://localhost:8895/wp-content/uploads/2026/11/dona-luma-collection.png",
+                                                "image_alt": "LUMA white gathered evening bag",
+                                                "link": "http://localhost:8895/product-category/luma/",
+                                                "link_aria_label": "Shop the LUMA collection"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "version": "5.0.46",
+    "name": "DONA Collections"
+}

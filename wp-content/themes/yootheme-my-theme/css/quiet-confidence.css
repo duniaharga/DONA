@@ -1,0 +1,105 @@
+.dona-confidence {
+  background-color: #f5f3f1;
+  position: relative;
+  overflow: hidden;
+}
+.dona-confidence .uk-section {
+  padding: 0;
+}
+.dona-confidence > .uk-background-norepeat {
+  background-size: 179.27% 116.56% !important;
+  background-position: 57.17% 130.68% !important;
+}
+.dona-confidence .uk-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-height: clamp(520px, 51.2vw, 983px);
+  display: flex;
+  align-items: center;
+  padding: 64px 5.68%;
+}
+.dona-confidence .uk-container > .uk-grid {
+  width: 100%;
+  margin: 0;
+}
+.dona-confidence .uk-container > .uk-grid > div {
+  padding: 0;
+}
+.dona-confidence .dona-confidence-title {
+  color: #000000;
+  font-family: "EB Garamond", "Times New Roman", Times, serif;
+  font-size: clamp(36px, 3.33vw, 64px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+.dona-confidence .dona-confidence-copy {
+  color: #000000;
+  font-family: "EB Garamond", "Times New Roman", Times, serif;
+  font-size: clamp(16px, 1.25vw, 24px);
+  line-height: 1.5;
+  max-width: 252px;
+  margin: 0 0 16px;
+}
+.dona-confidence .dona-confidence-copy p {
+  margin: 0;
+}
+.dona-confidence .dona-confidence-cta {
+  margin: 0;
+}
+.dona-confidence .uk-button {
+  color: #ffffff;
+  background: #000000;
+  border: 0;
+  border-radius: 0;
+  padding: 0 24px;
+  font-family: "EB Garamond", "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.dona-confidence .uk-button:hover {
+  background: #262626;
+  color: #ffffff;
+}
+@media (max-width: 959px) {
+  .dona-confidence > .uk-background-norepeat {
+    background-size: auto 100% !important;
+    background-position: 64% top !important;
+  }
+  .dona-confidence .uk-container {
+    min-height: 680px;
+    align-items: flex-end;
+    padding: 32px 16px;
+  }
+  .dona-confidence .uk-container > .uk-grid {
+    background: rgba(245, 243, 241, 0.94);
+    padding: 16px;
+  }
+  .dona-confidence .dona-confidence-copy {
+    font-size: 20px;
+  }
+}
+/* The active native section keeps its existing Builder layout and image. */
+.home .uk-section:has(> .uk-container .dona-confidence-title){background-position:75% center!important}
+@media(max-width:959px){
+ .home .uk-section:has(> .uk-container .dona-confidence-title){background-position:78% center!important}
+ .home .uk-section:has(> .uk-container .dona-confidence-title) .uk-grid{max-width:46%}
+ .home .uk-section:has(> .uk-container .dona-confidence-title) .dona-confidence-title{font-size:clamp(30px,4vw,42px)}
+}
+@media(min-width:960px) and (max-width:1199px){
+ .home .uk-section:has(> .uk-container .dona-confidence-title) .uk-grid{max-width:46%}
+ .home .uk-section:has(> .uk-container .dona-confidence-title) .dona-confidence-title{font-size:42px}
+}
+@media(max-width:639px){
+ .home .uk-section:has(> .uk-container .dona-confidence-title){--dona-confidence-image-height:clamp(360px,105vw,460px);background-size:auto var(--dona-confidence-image-height)!important;background-position:74% top!important;background-color:#f5f3f1;padding-block:0}
+ .home .uk-section:has(> .uk-container .dona-confidence-title) > .uk-container{box-sizing:border-box!important;min-height:calc(var(--dona-confidence-image-height) + 200px);display:flex;align-items:flex-end;padding-top:calc(var(--dona-confidence-image-height) - 20px);padding-bottom:24px}
+ .home .uk-section:has(> .uk-container .dona-confidence-title) .uk-grid{box-sizing:border-box;max-width:none;width:100%;margin:0;padding:20px;background:rgba(245,243,241,.94)}
+ .home .uk-section:has(> .uk-container .dona-confidence-title) .uk-grid > div{padding:0}
+ .home .uk-section:has(> .uk-container .dona-confidence-title) .dona-confidence-copy{max-width:none}
+}

@@ -1,0 +1,179 @@
+{
+  "type": "layout",
+  "version": "4.5.28",
+  "children": [
+    {
+      "type": "section",
+      "props": {
+        "id": "carries-more",
+        "name": "Carries More. Looks Effortless.",
+        "class": "dona-editorial dona-editorial-carry",
+        "style": "default",
+        "padding": "none",
+        "width": ""
+      },
+      "children": [
+        {
+          "type": "row",
+          "props": {
+            "layout": "1-2,1-2",
+            "column_gap": "collapse",
+            "row_gap": "collapse",
+            "width": "",
+            "margin": "remove-vertical",
+            "class": "dona-editorial-row"
+          },
+          "children": [
+            {
+              "type": "column",
+              "props": {
+                "class": "dona-editorial-copy",
+                "vertical_align": "middle"
+              },
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "Carries More. Looks Effortless.",
+                    "title_element": "h2",
+                    "class": "dona-editorial-title",
+                    "margin": "remove-vertical"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "content": "Room for your essentials, with a beautifully slim silhouette.",
+                    "class": "dona-editorial-description",
+                    "margin": "remove-vertical"
+                  }
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "class": "dona-editorial-cta",
+                    "margin": "remove-vertical"
+                  },
+                  "children": [
+                    {
+                      "type": "button_item",
+                      "props": {
+                        "content": "Discover the Bag",
+                        "button_style": "primary",
+                        "link": "#favourites"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "props": {
+                "class": "dona-editorial-media"
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "props": {
+                    "image": "wp-content/themes/yootheme-my-theme/assets/editorial/carries-more.png",
+                    "image_alt": "Brown handbag with a laptop partially tucked inside",
+                    "class": "dona-editorial-image",
+                    "margin": "remove-vertical"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "props": {
+        "id": "about-dona",
+        "name": "About DONA",
+        "class": "dona-editorial dona-editorial-about",
+        "style": "default",
+        "padding": "none",
+        "width": ""
+      },
+      "children": [
+        {
+          "type": "row",
+          "props": {
+            "layout": "1-2,1-2",
+            "column_gap": "collapse",
+            "row_gap": "collapse",
+            "width": "",
+            "margin": "remove-vertical",
+            "class": "dona-editorial-row"
+          },
+          "children": [
+            {
+              "type": "column",
+              "props": {
+                "class": "dona-editorial-media"
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "props": {
+                    "image": "wp-content/themes/yootheme-my-theme/assets/editorial/about-dona.png",
+                    "image_alt": "Close-up of the gold DONA logo on a black leather bag",
+                    "class": "dona-editorial-image",
+                    "margin": "remove-vertical"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "props": {
+                "class": "dona-editorial-copy",
+                "vertical_align": "middle"
+              },
+              "children": [
+                {
+                  "type": "headline",
+                  "props": {
+                    "content": "About DONA",
+                    "title_element": "h2",
+                    "class": "dona-editorial-title",
+                    "margin": "remove-vertical"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "content": "Timeless style meets thoughtful function. Bags designed for women balancing work, study, and everything that matters.",
+                    "class": "dona-editorial-description",
+                    "margin": "remove-vertical"
+                  }
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "class": "dona-editorial-cta",
+                    "margin": "remove-vertical"
+                  },
+                  "children": [
+                    {
+                      "type": "button_item",
+                      "props": {
+                        "content": "Our Story",
+                        "button_style": "primary",
+                        "dialog": "<h2>About DONA</h2><p>Our story is coming soon.</p>",
+                        "dialog_layout": "modal"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

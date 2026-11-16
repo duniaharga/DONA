@@ -1,0 +1,12 @@
+#dona-media-sidebar{box-sizing:border-box;background:#fff;border:1px solid #c3c4c7;padding:14px;border-radius:3px;margin:15px 20px 20px 0}
+#dona-media-sidebar h2{margin:0 0 12px;font-size:16px}
+#dona-media-sidebar nav{max-height:48vh;overflow:auto;margin-bottom:14px}
+#dona-media-sidebar nav a{display:block;padding:8px 10px;text-decoration:none;border-radius:3px}
+#dona-media-sidebar nav a:hover,#dona-media-sidebar nav a[aria-current],#dona-media-sidebar .dona-drop-target{background:#e8f2fb;color:#135e96}
+#dona-media-sidebar nav a:focus-visible{outline:2px solid #2271b1;outline-offset:-2px}
+#dona-media-sidebar label,#dona-media-sidebar select{display:block;width:100%;margin:12px 0 8px}
+#dona-media-sidebar .description{font-size:12px;line-height:1.5}
+@media(min-width:1000px){
+#dona-media-sidebar{position:absolute;left:0;top:12px;width:230px}
+body.dona-has-media-folders #wp-media-grid,body.dona-has-media-folders #wpbody-content>.wrap{margin-left:250px}
+}

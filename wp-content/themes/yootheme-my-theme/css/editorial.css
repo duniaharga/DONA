@@ -1,0 +1,38 @@
+/* Figma 26:228–244. Responsive stacking below 960px is inferred. */
+.dona-editorial.uk-section {padding:0!important;color:#000;}
+.dona-editorial-carry {background:#fff;}
+.dona-editorial-about {background:#f5f3f1;}
+.dona-editorial .dona-editorial-row {margin:0!important;}
+.dona-editorial .dona-editorial-row > div {padding:0;margin:0!important;}
+.dona-editorial .dona-editorial-copy {box-sizing:border-box;min-height:39.5vw;padding:5vw 5.5vw!important;}
+.dona-editorial-carry .dona-editorial-copy {padding-left:8.4vw!important;padding-right:5vw!important;}
+.dona-editorial .dona-editorial-title {font-family:'EB Garamond',serif;font-size:clamp(30px,2.5vw,48px);line-height:.98;font-weight:400;letter-spacing:0;color:#000;margin:0 0 24px!important;}
+.dona-editorial .dona-editorial-description {font-family:'Jost','Work Sans',sans-serif;font-size:16px;font-weight:400;line-height:1.5;max-width:490px;color:#000;margin:0 0 18px!important;}
+.dona-editorial-carry .dona-editorial-description {font-size:15px;max-width:340px;}
+.dona-editorial .dona-editorial-cta .uk-button {min-width:151px;min-height:46px;box-sizing:border-box;padding:0 26px;background:#000;border:1px solid #000;color:#f5f3f1;font:italic 14px/44px 'EB Garamond',serif;text-transform:none;letter-spacing:0;border-radius:0;}
+.dona-editorial-carry .dona-editorial-cta .uk-button {min-width:161px;}
+.dona-editorial .dona-editorial-cta .uk-button:hover {background:#0d0d0d;}
+.dona-editorial .dona-editorial-cta .uk-button:focus-visible {outline:2px solid #000;outline-offset:4px;}
+.dona-editorial .dona-editorial-media {position:relative;min-height:39.5vw;overflow:hidden;}
+.dona-editorial .dona-editorial-image {position:absolute;inset:0;margin:0!important;}
+.dona-editorial .dona-editorial-image picture {display:block;height:100%;}
+.dona-editorial .dona-editorial-image img {display:block;width:100%;height:100%;object-fit:cover;}
+.dona-editorial-carry .dona-editorial-image img {object-position:50% 80%;}
+@media(max-width:959px){
+ .dona-editorial .dona-editorial-row > div {width:100%;}
+ .dona-editorial .dona-editorial-copy,.dona-editorial-carry .dona-editorial-copy {min-height:320px;padding:64px 8vw!important;}
+ .dona-editorial .dona-editorial-media {min-height:0;aspect-ratio:1.28;}
+ .dona-editorial .dona-editorial-title {font-size:36px;line-height:1.1;max-width:600px;}
+ .dona-editorial .dona-editorial-description {font-size:16px;}
+}
+@media(max-width:479px){
+ .dona-editorial .dona-editorial-copy,.dona-editorial-carry .dona-editorial-copy {padding:48px 24px!important;min-height:300px;}
+ .dona-editorial .dona-editorial-title {font-size:32px;margin-bottom:20px!important;}
+}
+
+/* Keep the Carries More copy inside its native container and stack below tablet. */
+#carries-more .dona-carry-row > div{min-width:0}
+#carries-more .dona-carry-copy > .uk-tile{box-sizing:border-box;width:100%;max-width:100%;padding:clamp(24px,4vw,64px)}
+#carries-more .dona-carry-title,#carries-more .dona-carry-description{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+#carries-more .dona-carry-title{font-size:clamp(30px,3vw,48px);line-height:1.12}
+@media(max-width:959px){#carries-more .dona-carry-copy > .uk-tile{padding:32px 24px}}

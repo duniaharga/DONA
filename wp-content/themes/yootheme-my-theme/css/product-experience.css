@@ -1,0 +1,82 @@
+.dona-360-action{margin:12px 0 20px}
+.dona-view-360{min-height:44px;text-transform:none}
+.dona-explore-details h2{font:400 clamp(32px,4vw,44px)/1.15 'EB Garamond',serif;margin:0 0 20px}
+.dona-explore-intro{max-width:700px;margin-bottom:28px;color:#494541}
+.dona-explore-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.dona-explore-grid figure{min-width:0;margin:0}
+.dona-explore-grid img,.dona-explore-grid video{display:block;width:100%;height:auto;max-height:760px;object-fit:contain;background:#efedeb}
+.dona-explore-grid video{aspect-ratio:4/3}
+.dona-explore-grid figcaption{margin-top:12px;font:300 14px/1.6 'Work Sans',sans-serif;color:#494541}
+#dona-360-modal .uk-modal-dialog{width:min(860px,calc(100vw - 32px));background:#faf9f7;color:#161412;border:1px solid #161412;border-radius:0;padding:32px}
+#dona-360-modal h2{padding-right:24px;font:400 clamp(27px,4vw,36px)/1.2 'EB Garamond',serif;margin:0 0 12px}
+#dona-360-modal #dona-360-help{font:300 14px/1.5 'Work Sans',sans-serif}
+.dona-360-stage{background:#efedeb}
+.dona-360-stage video{display:block;width:100%;height:min(52vh,540px);object-fit:contain;touch-action:pan-y;cursor:grab}
+.dona-360-stage video.is-dragging{cursor:grabbing}
+.dona-360-controls{display:grid;grid-template-columns:44px minmax(0,1fr) 44px 40px;gap:12px;align-items:center;margin-top:16px}
+.dona-360-controls button{width:44px;height:44px;border:1px solid #161412;border-radius:0;background:transparent;color:#161412;font-size:20px;cursor:pointer}
+.dona-360-controls button:hover{background:#000;color:#fff}
+.dona-360-controls label{font:300 13px/1.4 'Work Sans',sans-serif}
+.dona-360-controls input{display:block;width:100%;margin-top:6px;accent-color:#161412}
+.dona-360-controls output{font:300 13px/1.4 'Work Sans',sans-serif}
+#dona-360-modal button:focus-visible,#dona-360-modal input:focus-visible{outline:2px solid #161412;outline-offset:3px}
+.dona-360-status{margin:12px 0 0;font-size:13px}
+.dona-360-status:empty{display:none}
+@media(max-width:639px){.dona-explore-grid{grid-template-columns:minmax(0,1fr);gap:24px}#dona-360-modal .uk-modal-dialog{padding:24px 16px}.dona-360-controls{grid-template-columns:44px minmax(0,1fr) 44px;gap:8px}.dona-360-controls output{grid-column:2;text-align:center}.dona-360-stage video{height:45vh}}
+/* Bag-only interactive photo: positions are relative to the uncropped image. */
+#dona-360-modal [hidden]{display:none!important}
+.dona-bag-photo-stage{position:relative;height:min(52vh,540px);background:#efedeb}
+.dona-bag-photo-stage > img{display:block;width:100%;height:100%;object-fit:contain}
+.dona-bag-hotspot{position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;padding:0;border:1px solid #161412;border-radius:50%;background:#faf9f7;color:#161412;font:300 26px/1 'Work Sans',sans-serif;cursor:pointer;visibility:hidden}
+.dona-bag-photo-stage[data-ready=true] .dona-bag-hotspot{visibility:visible}
+.dona-bag-hotspot:hover,.dona-bag-hotspot[aria-expanded=true]{background:#000;color:#fff}
+.dona-bag-feature-panel{position:relative;padding:20px;margin-top:16px;border:1px solid #ceccca;background:#faf9f7}
+.dona-bag-feature-panel h3{font:400 24px/1.2 'EB Garamond',serif;margin:0 32px 12px 0}
+.dona-bag-feature-panel p{font:300 14px/1.6 'Work Sans',sans-serif;margin:0}
+.dona-bag-feature-panel img{display:block;width:100%;max-height:280px;object-fit:contain;margin-top:16px}
+.dona-bag-feature-close{position:absolute;right:8px;top:8px;width:36px;height:36px;border:0;background:none;color:#161412;font-size:24px;cursor:pointer}
+.dona-bag-sizes{margin-top:20px;padding-top:16px;border-top:1px solid #ceccca}
+.dona-bag-sizes h3{font:400 20px/1.2 'EB Garamond',serif;margin:0 0 12px}
+.dona-bag-sizes [role=group],.dona-bag-modes{display:flex;flex-wrap:wrap;gap:8px}
+.dona-bag-sizes [role=group] button,.dona-bag-modes button{min-height:44px;padding:8px 16px;border:1px solid #161412;border-radius:0;background:transparent;color:#161412;font:300 14px/1.4 'Work Sans',sans-serif;cursor:pointer}
+.dona-bag-sizes button[aria-pressed=true],.dona-bag-modes button[aria-pressed=true]{background:#000;color:#fff}
+.dona-bag-sizes button:disabled{opacity:.4;cursor:not-allowed}
+.dona-bag-size-status{font:300 13px/1.4 'Work Sans',sans-serif;margin:12px 0 0}
+.dona-bag-modes{margin-bottom:16px}
+@media(max-width:639px){.dona-bag-photo-stage{height:42vh}}
+
+/* Editable title row: title grows while the text action stays at the row end. */
+.single-product .dona-product-title-row{align-items:flex-end;flex-wrap:nowrap;gap:16px;margin-left:0!important}
+.dona-product-title-row > :first-child{flex:1 1 0;min-width:0;width:auto;padding-left:0}
+.single-product .dona-product-title-row > :last-child{flex:0 0 auto!important;width:auto;padding-left:0}
+.dona-product-title-row .dona-360-action{margin:0}
+.dona-product-title-row .dona-view-360{white-space:nowrap;font-size:13px}
+.dona-bag-demo-note{padding:12px;border:1px solid #ceccca;font-size:13px;line-height:1.5}
+@media(max-width:639px){.dona-product-title-row{gap:10px}.dona-product-title-row h1{font-size:clamp(27px,6.5vw,36px)}}
+
+.dona-spin-stage{height:min(48vh,440px);display:flex;align-items:center;justify-content:center;background:#efedeb;touch-action:pan-y;cursor:grab;overflow:hidden}
+.dona-spin-image{width:min(100%,48vh,440px);aspect-ratio:1/1;background-repeat:no-repeat;background-size:400% 200%;background-position:0 0;transform:scale(.86);transition:transform .2s ease;pointer-events:none}
+.dona-spin-controls{display:flex;align-items:center;gap:12px;margin-top:16px}.dona-spin-controls label{flex:1}.dona-spin-controls input{display:block;width:100%;accent-color:#000}
+.dona-spin-controls button,.dona-spin-sizes button{min-width:44px;min-height:44px;border:1px solid #000;background:transparent;color:#000;border-radius:0;cursor:pointer}.dona-spin-sizes{border:0;padding:0;margin:20px 0 0;display:flex;gap:8px}.dona-spin-sizes legend{margin-bottom:8px}.dona-spin-sizes button[aria-pressed=true],.dona-spin-controls button:hover{background:#000;color:#fff}.dona-spin-size-note{font-size:12px;line-height:1.5}
+@media(prefers-reduced-motion:reduce){.dona-spin-image{transition:none}}
+
+/* One rotating stage, two feature pins and a single open overlay card. */
+.dona-spin-stage{position:relative;cursor:ew-resize}
+.dona-spin-stage[data-ready=true] .dona-bag-hotspot{visibility:visible;z-index:2}
+.dona-spin-stage .dona-bag-feature-panel{position:absolute;z-index:3;bottom:16px;left:50%;transform:translateX(-50%);width:min(320px,calc(100% - 32px));box-sizing:border-box;margin:0;padding:18px 40px 18px 18px;border:1px solid #ceccca;border-radius:0;background:#fff;box-shadow:0 4px 18px #00000014;cursor:default}
+.dona-spin-stage .dona-bag-feature-panel:after{content:'';position:absolute;left:50%;bottom:-7px;width:12px;height:12px;transform:rotate(45deg);background:#fff;border-right:1px solid #ceccca;border-bottom:1px solid #ceccca}
+.dona-spin-stage .dona-bag-feature-panel h3{font-size:22px;margin:0 0 8px}
+.dona-spin-stage .dona-bag-feature-panel p{font-size:13px}
+
+/* Feature one opens above the bag; feature two stays below. */
+.dona-spin-stage #dona-bag-feature-1{top:16px;bottom:auto}
+.dona-spin-stage #dona-bag-feature-1:after{bottom:-7px;top:auto}
+.dona-spin-stage #dona-bag-feature-2:after{top:-7px;bottom:auto;transform:rotate(225deg)}
+.single-product .dona-view-360{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:4px 10px;background:#000;color:#fff;border:1px solid #000;border-radius:0;line-height:1.4;text-decoration:none}
+.single-product .dona-view-360:before,.single-product .dona-view-360:after{display:none}
+.single-product .dona-view-360:hover,.single-product .dona-view-360:focus-visible{background:#292929;color:#fff;border-color:#292929}
+.single-product .dona-view-360:focus-visible{outline:2px solid #000;outline-offset:3px}
+@media(max-width:639px){.single-product .dona-product-title-row .dona-view-360{font-size:11px;padding:4px 8px}}
+
+.single-product .dona-product-title-row .dona-view-360{font-size:12px}
+@media(max-width:639px){.single-product .dona-product-title-row .dona-view-360{font-size:11px}}

@@ -1,0 +1,551 @@
+{
+    "type": "layout",
+    "version": "4.5.28",
+    "name": "DONA Single Product",
+    "children": [
+        {
+            "type": "section",
+            "props": {
+                "image_position": "center-center",
+                "name": "Product details",
+                "style": "default",
+                "title_breakpoint": "xl",
+                "title_position": "top-left",
+                "title_rotation": "left",
+                "vertical_align": "middle",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "column_gap": "large",
+                        "layout": "1-2,1-2",
+                        "margin": "remove-vertical",
+                        "row_gap": "large"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky_breakpoint": "m",
+                                "width_medium": "1-2"
+                            },
+                            "children": [
+                                {
+                                    "type": "woo_images",
+                                    "props": {
+                                        "margin": "remove-vertical"
+                                    }
+                                },
+                                {
+                                    "type": "gallery",
+                                    "props": {
+                                        "filter_align": "left",
+                                        "filter_all": true,
+                                        "filter_grid_breakpoint": "m",
+                                        "filter_grid_width": "auto",
+                                        "filter_position": "top",
+                                        "filter_style": "tab",
+                                        "grid_column_gap": "small",
+                                        "grid_default": "1",
+                                        "grid_large": "1",
+                                        "grid_medium": "1",
+                                        "grid_row_gap": "small",
+                                        "grid_small": "1",
+                                        "image_width": 1000,
+                                        "item_animation": true,
+                                        "lightbox": true,
+                                        "lightbox_bg_close": true,
+                                        "link_style": "default",
+                                        "link_text": "",
+                                        "margin": "remove-vertical",
+                                        "meta_align": "below-title",
+                                        "meta_element": "div",
+                                        "meta_style": "text-meta",
+                                        "name": "Stacked product photography",
+                                        "overlay_hover": false,
+                                        "overlay_link": true,
+                                        "overlay_mode": "cover",
+                                        "overlay_position": "center",
+                                        "overlay_style": "",
+                                        "overlay_transition": "fade",
+                                        "show_content": false,
+                                        "show_hover_image": true,
+                                        "show_hover_video": true,
+                                        "show_link": false,
+                                        "show_meta": false,
+                                        "show_title": false,
+                                        "text_align": "center",
+                                        "text_color": "light",
+                                        "title_element": "h3",
+                                        "title_hover_style": "reset"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "gallery_item",
+                                            "source": {
+                                                "query": {
+                                                    "name": "products",
+                                                    "field": {
+                                                        "name": "singleProduct.donaEditorialImages"
+                                                    }
+                                                },
+                                                "props": {
+                                                    "image": {
+                                                        "name": "url"
+                                                    },
+                                                    "image_alt": {
+                                                        "name": "alt"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky": "column",
+                                "position_sticky_breakpoint": "m",
+                                "position_sticky_offset": "40",
+                                "vertical_align": "top",
+                                "width_medium": "1-2"
+                            },
+                            "children": [
+                                {
+                                    "type": "woo_notices"
+                                },
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "margin": "remove-vertical",
+                                        "title_element": "h1",
+                                        "title_style": "h3"
+                                    },
+                                    "source": {
+                                        "query": {
+                                            "name": "products",
+                                            "field": {
+                                                "name": "singleProduct"
+                                            }
+                                        },
+                                        "props": {
+                                            "content": {
+                                                "name": "title"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "woo_price",
+                                    "props": {
+                                        "margin": "small"
+                                    }
+                                },
+                                {
+                                    "type": "woo_description",
+                                    "props": {
+                                        "description": "short_description",
+                                        "margin": "medium"
+                                    }
+                                },
+                                {
+                                    "type": "woo_add_to_cart",
+                                    "props": {
+                                        "margin": "medium",
+                                        "quantity": true
+                                    }
+                                },
+                                {
+                                    "type": "accordion",
+                                    "props": {
+                                        "collapsible": true,
+                                        "content_column_breakpoint": "m",
+                                        "image_align": "top",
+                                        "image_grid_breakpoint": "m",
+                                        "image_grid_width": "1-2",
+                                        "image_svg_color": "emphasis",
+                                        "link_style": "default",
+                                        "link_text": "Read more",
+                                        "margin": "medium",
+                                        "multiple": true,
+                                        "show_image": false,
+                                        "show_link": false
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "accordion_item",
+                                            "props": {
+                                                "title": "Details"
+                                            },
+                                            "source": {
+                                                "query": {
+                                                    "name": "products",
+                                                    "field": {
+                                                        "name": "singleProduct"
+                                                    }
+                                                },
+                                                "props": {
+                                                    "content": {
+                                                        "name": "content"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "accordion_item",
+                                            "props": {
+                                                "title": "Size & specifications"
+                                            },
+                                            "source": {
+                                                "query": {
+                                                    "name": "products",
+                                                    "field": {
+                                                        "name": "singleProduct"
+                                                    }
+                                                },
+                                                "props": {
+                                                    "content": {
+                                                        "name": "woocommerce.additional_information"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "woo_upsell_products",
+                                    "props": {
+                                        "columns": 1,
+                                        "margin": "large",
+                                        "order": "desc",
+                                        "orderby": "rand",
+                                        "posts_per_page": 3,
+                                        "show_headline": true,
+                                        "show_rating": false,
+                                        "show_title": true
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "height": "viewport",
+                "height_viewport": 60,
+                "image_position": "center-center",
+                "name": "Product background video",
+                "padding": "none",
+                "style": "default",
+                "title_breakpoint": "xl",
+                "title_position": "top-left",
+                "title_rotation": "left",
+                "vertical_align": "middle",
+                "video_title": "Product film",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky_breakpoint": "m"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "source": {
+                "query": {
+                    "name": "products",
+                    "field": {
+                        "name": "singleProduct"
+                    }
+                },
+                "props": {
+                    "video": {
+                        "name": "donaProductVideo"
+                    },
+                    "_condition": {
+                        "name": "donaProductVideo",
+                        "filters": {
+                            "condition": "!!"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "section",
+            "props": {
+                "image_position": "center-center",
+                "name": "Product photo gallery",
+                "padding": "small",
+                "style": "default",
+                "title_breakpoint": "xl",
+                "title_position": "top-left",
+                "title_rotation": "left",
+                "vertical_align": "middle",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky_breakpoint": "m"
+                            },
+                            "children": [
+                                {
+                                    "type": "gallery",
+                                    "props": {
+                                        "filter_align": "left",
+                                        "filter_all": true,
+                                        "filter_grid_breakpoint": "m",
+                                        "filter_grid_width": "auto",
+                                        "filter_position": "top",
+                                        "filter_style": "tab",
+                                        "grid_column_gap": "small",
+                                        "grid_default": "2",
+                                        "grid_medium": "5",
+                                        "grid_row_gap": "small",
+                                        "image_height": 674,
+                                        "image_width": 448,
+                                        "item_animation": true,
+                                        "lightbox": true,
+                                        "lightbox_bg_close": true,
+                                        "link_style": "default",
+                                        "link_text": "",
+                                        "margin": "remove-vertical",
+                                        "meta_align": "below-title",
+                                        "meta_element": "div",
+                                        "meta_style": "text-meta",
+                                        "overlay_hover": false,
+                                        "overlay_link": true,
+                                        "overlay_mode": "cover",
+                                        "overlay_position": "center",
+                                        "overlay_style": "",
+                                        "overlay_transition": "fade",
+                                        "show_content": false,
+                                        "show_hover_image": true,
+                                        "show_hover_video": true,
+                                        "show_link": false,
+                                        "show_meta": false,
+                                        "show_title": false,
+                                        "text_align": "center",
+                                        "text_color": "light",
+                                        "title_element": "h3",
+                                        "title_hover_style": "reset"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "gallery_item",
+                                            "source": {
+                                                "query": {
+                                                    "name": "products",
+                                                    "field": {
+                                                        "name": "singleProduct.donaEditorialImages"
+                                                    }
+                                                },
+                                                "props": {
+                                                    "image": {
+                                                        "name": "url"
+                                                    },
+                                                    "image_alt": {
+                                                        "name": "alt"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "name": "DONA — Explore the details",
+                "html_element": "section",
+                "class": "dona-product-explore-section",
+                "id": "dona-explore-details",
+                "padding": "small",
+                "style": "default",
+                "width": "default"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "name": "Per-product detail images and videos",
+                                        "content": "[dona_explore_details]"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "props": {
+                "image_position": "center-center",
+                "name": "You may also like",
+                "padding": "small",
+                "style": "default",
+                "title_breakpoint": "xl",
+                "title_position": "top-left",
+                "title_rotation": "left",
+                "vertical_align": "middle",
+                "width": "expand"
+            },
+            "children": [
+                {
+                    "type": "row",
+                    "props": {
+                        "layout": "1-1"
+                    },
+                    "children": [
+                        {
+                            "type": "column",
+                            "props": {
+                                "image_position": "center-center",
+                                "position_sticky_breakpoint": "m"
+                            },
+                            "children": [
+                                {
+                                    "type": "headline",
+                                    "props": {
+                                        "content": "You May Also Like",
+                                        "margin": "small",
+                                        "title_element": "h2",
+                                        "title_style": "h4"
+                                    }
+                                },
+                                {
+                                    "type": "grid",
+                                    "props": {
+                                        "class": "dona-product-grid",
+                                        "content_column_breakpoint": "m",
+                                        "content_margin": "remove",
+                                        "filter_align": "left",
+                                        "filter_all": true,
+                                        "filter_grid_breakpoint": "m",
+                                        "filter_grid_width": "auto",
+                                        "filter_position": "top",
+                                        "filter_style": "tab",
+                                        "grid_column_gap": "small",
+                                        "grid_default": "2",
+                                        "grid_large": "5",
+                                        "grid_medium": "5",
+                                        "grid_row_gap": "small",
+                                        "icon_width": 80,
+                                        "image_align": "top",
+                                        "image_grid_breakpoint": "m",
+                                        "image_grid_width": "1-2",
+                                        "image_svg_color": "emphasis",
+                                        "image_transition": "scale-up",
+                                        "item_animation": true,
+                                        "lightbox_bg_close": true,
+                                        "link_style": "default",
+                                        "link_text": "",
+                                        "margin": "remove-vertical",
+                                        "meta_align": "below-title",
+                                        "meta_element": "div",
+                                        "meta_style": "text-meta",
+                                        "panel_link": true,
+                                        "panel_link_hover": false,
+                                        "show_content": true,
+                                        "show_hover_image": true,
+                                        "show_hover_video": true,
+                                        "show_image": true,
+                                        "show_link": true,
+                                        "show_meta": true,
+                                        "show_title": true,
+                                        "show_video": true,
+                                        "title_align": "top",
+                                        "title_element": "h3",
+                                        "title_grid_breakpoint": "m",
+                                        "title_grid_width": "1-2",
+                                        "title_hover_style": "reset",
+                                        "title_margin": "small"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "grid_item",
+                                            "source": {
+                                                "query": {
+                                                    "name": "products",
+                                                    "field": {
+                                                        "name": "singleProduct.relatedProducts",
+                                                        "arguments": {
+                                                            "limit": 5
+                                                        }
+                                                    }
+                                                },
+                                                "props": {
+                                                    "title": {
+                                                        "name": "title"
+                                                    },
+                                                    "image": {
+                                                        "name": "featuredImage.url"
+                                                    },
+                                                    "image_alt": {
+                                                        "name": "featuredImage.alt"
+                                                    },
+                                                    "link": {
+                                                        "name": "link"
+                                                    },
+                                                    "meta": {
+                                                        "name": "donaBadge"
+                                                    },
+                                                    "content": {
+                                                        "name": "donaCardDetails"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
